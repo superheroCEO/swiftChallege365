@@ -1,6 +1,76 @@
 
+Rise, let us be on our way
+
+“Lucious is safe”
+The more you type, the more practice.
+
+
+	https://www.hackingwithswift.com/100
+	https://codewithchris.com/swift-tutorial-resources/
+
+******
+******
+day31__Th/7/4/_Day17: App Brewery (Dr. Angela)	
+630am start time
+800am end time
+(90min)
+******
+******
+
+RECALL If-else clauses work like as such:
+	if (condition 1) {
+		statement1;
+	} else if (condition2) {
+		statement2;
+	} else {
+		statement3;
+}
+
+
+RECALL use of pseudo code
+	"if topButton was pressed {
+		change the storyTextView to story 3
+		change the topButtonTitle to answer3a
+		change the bottomButtonTitle to answer3b
+	} "	
+
+
+First: 	what going to make? 
+	what UI elements are required?
+	IF sender.tag == 1 vs sender.tag == 2 THEN
+		want to CHECK IF sender.tag is 1 vs 2
+		everything given sender.tag = 0 by default
+
+dot notation to access properties
+
+Recall 
+	use of ELSE IF
+	use of || or operator
+	use of .isHidden = true vs false for button property
+
+THINK:	a number to define where user is? (Track them/progress)
+	where is user?
+	what button did user press?
+	reassigning of variables
+
+
+COMMAND A ---> OPTION + CONTROL + I == align text
+
+In VIM
+	In the text editor, press computer's i key to edit the file (place in INSERT MODE)
+	after editing, press ESC (will put vim in COMMAND MODE)
+	to save, type :w
+	to exit, type :q
+	to save && exit, type	:wq
+	to discard changes, type :q!
+
+
+******
+******
 day30__W/7/3/_Day16: App Brewery (Dr. Angela)    
 1pm star time
+******
+******
 
 The goal of this tutorial is to get you comfortable with thinking about the state of your app and updating the Views accordingly. In addition, you will be using logic to control the flow of the program. This is a challenge where you’ll solidify your understanding of IF-ELSE statements and comparison operators.
 
@@ -51,4 +121,116 @@ Keeping track of state
 	(storyIndex == 3 || storyIndex == 4) tests “Is storyIndex equal to three OR is 		storyIndex equal to four?”
 
 When the user gets to the stories without answers, you can hide the buttons using the syntax:  buttonName.isHidden = true
+
+
+On macOS systems, the configuration file is found at “/private/etc/ssh/ssh_config,” which is symlinked to “/etc/ssh/ssh_config” for compatibility.
+
+A second, user-specific ssh_config is found at “~/.ssh/ssh_config.” If it exists, this file supersedes the system-wide configuration file. This file sets user-specific options without changing the system’s configuration.
+
+touch foo.txt
+
+
+******
+******
+day29_tu/7/2_day15: App Brewery (Dr. Angela)
+130pm start time
+******
+******
+
+Recall use of +=
+		score += 1 --> score = score + 1
+
+Where does it make sense for this to happen?
+Escaping a string
+Declaring a function vs calling function
+Does code work as expected?
+Variables as state trackers	
+
+How can we give the user feedback?
+No console for user
+Print statements == only developer sees
+Power of 3rd party libraries 
+	"HUD == Heads Up Display" visual (objective-C code)
+	note bridging header creates
+3 steps to use code:
+	1) git clone repo
+	2) drag/drop 3 files into Supporting Files folder
+	3) "#import ProgressHUD.h" ---> BRIDGING HEADER file
+ProgressHUD dot notation
+NO POINT IN REINVENTING THE WHEEL
+
+REVISITING COMMAND LINE
+	-repo
+	-commit
+	-branch
+	-merge
+	-fork
+	-pull request
+
+commands:
+	cd	pwd	ls	cd... 	clear	open . 	ls -all
+	cd + drag folder
+	power of tab && autocomplete
+
+
+Starting out, maybe easier to create folder on GITHUB --> clone
+	vs using git init
+
+
+	git clone
+	git status
+	git commit -a
+	git commit -a -m "Creating new file"
+
+Get git error? "You can suppress this message by..."
+
+	git config --global user.name "Your Name"
+	git config --global user.email 
+	git config --list
+	git log
+	git log -2
+
+VIM!	(terminal based)
+
+	" : q "	 IF GET STUCK IN VIM
+
+	git push
+	git pull
+	git remote
+	git remote -v
+		"remote" == duplicate instance of your repo that lives on github.com
+
+	
+	git push origin 
+			ORIGIN JUST THE DEFAULT NAME git use when cloning repo
+
+	git push origin master
+	
+	git init --> turn it into an empty git repo
+	
+Idea of staging
+
+3 steps
+	1) save file
+	2) add it
+	3) commit it
+
+	git commit -a 	(add it && commit it)
+	git commit filename.txt	vs	git commit -a (all files)
+
+IF STARTING ON GITHUB: remote already associated
+vs.
+IF STARTING LOCALLY, HAVE TO CREATE REMOTE
+
+	git remote
+	git remote -v
+	git remote add origin ("add a remote named origin" == convention)
+	git remote add origin <URL>
+	git pull origin master
+
+Generate new SSH
+
+	hidden .ssh folder
+
+
 
