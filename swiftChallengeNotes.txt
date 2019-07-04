@@ -1,0 +1,54 @@
+
+day30__W/7/3/_Day16: App Brewery (Dr. Angela)    
+1pm star time
+
+The goal of this tutorial is to get you comfortable with thinking about the state of your app and updating the Views accordingly. In addition, you will be using logic to control the flow of the program. This is a challenge where you’ll solidify your understanding of IF-ELSE statements and comparison operators.
+
+app will tell a story depending on what the user chooses and can be fleshed out and modified to provide an engaging story-telling experience
+
+think:
+    //our strings/constants/var
+    //UI Elements linked to storyboard
+    //initializing variables
+    //User presses button(s)    (triggering IBAction)
+        The “sender” in the brackets refers to the button that triggered the IBAction
+        need the tag property to distinguish WHO TRIGGERED the IBAction. 
+        can do this by checking sender.tag
+            if sender.tag == 1...
+            if sender.tag == 2...
+
+creating empty text file in shell (bash!)
+	touch foo.txt	==	>>foo.txt
+	touch ~/Downloads/newTay.txt
+
+Recall
+	echo "Hello Taylor Alison Swift" >13fortaylor.txt
+	echo "Hello Taylor" > ~/Downloads/somethingElse.txt
+
+short answer:
+	terminal = tty = text input/output environment
+	console = physical terminal
+	shell = command line interpreter
+   
+
+Buttons have a state because they can be pressed, highlighted, or disabled. Each may have different appearances or titles. Apple says we should set the value for the normal state at minimum
+
+To figure out which route the user should take, got to use the TAG associated w/buttons.
+
+Recall logic operators:
+	== to test EQUALITY.
+	E.g. (someValue == 5) tests “Is someValue equal to five?"
+
+&& single = sign used for ASSIGNMENT 
+	i.e. something = 3. 
+
+
+Keeping track of state
+
+&& --> logical AND operator
+	(storyIndex > 3 && storyIndex < 5) tests “Is storyIndex greater than three AND is 	storyIndex smaller than five?”
+|| --> logical OR operator. 
+	(storyIndex == 3 || storyIndex == 4) tests “Is storyIndex equal to three OR is 		storyIndex equal to four?”
+
+When the user gets to the stories without answers, you can hide the buttons using the syntax:  buttonName.isHidden = true
+
