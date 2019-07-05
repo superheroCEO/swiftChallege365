@@ -13,8 +13,44 @@ The more you type, the more practice.
 ******
 day32__F/7/5/_Day18: App Brewery (Dr. Angela)	
 730am start time
-00am end time
-(0min) COMPLETE✅✅✅
+900am end time
+(90min) COMPLETE✅✅✅
+
+
+How to make designs look great across all devices, and/or orientation?
+1) programmatically 
+2) AUTO LAYOUT via setting constraints - rules for program to abide by 
+
+
+viewDidLoad == cycle of app where view first gets displayed for user
+UIView == class (blueprint)
+CG == CoreGraphics
+by default, UIViews are transparent; need to set background color property to make visual for user
+(x: 0, y: 0) == refers to TOP LEFT-HAND CORNER position
+Need to determine height/width of screen when positioning objects
+self.view.frame.width/2 == refers to current view controller
+The larger the screen, the larger the screen w/H
+
+Constraints allow us to set rules as to how we want our views to be displayed. Because mobile screens have different resolutions and sizes, we need these rules to tell the iPhone/iPad how it should layout the display. These rules allow our UI elements to be resized and positioned so that no matter which screen they are displayed on, they always look as the designer intended.
+
+FLOW
+	Uncheck constraints to margin button
+Order matters
+Instead of constraining to margins (default setting), constrain to edge of screen
+Clearing constraints on current view element view entire view (~RESET BUTTON)
+Pinning vs alignment method (and/or)
+Introducing CONTAINERS to hold views
+Sibling vs child relationships
+nesting
+"Inside a folder vs creating a folder"
+4 zeroes contraints
+"Always position this way inside the container"
+"Pin this edge, pin this edge"
+0 refers to closest element neighbor
+Create containers that will always evenly distribute
+Background color to default == colorless
+
+
 ******
 ******
 
@@ -27,7 +63,6 @@ Programmers”
 But what you do with the help will determine how fast you progress as a
 coder. On a site like StackOverflow, it can be very tempting to just copy and
 paste the code that someone has provided. 
-
 
 exercise didn’t teach you anything other than code reliance. 
 
