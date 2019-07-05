@@ -9,6 +9,70 @@ The more you type, the more practice.
 	https://www.hackingwithswift.com/100
 	https://codewithchris.com/swift-tutorial-resources/
 
+******
+******
+day32__F/7/5/_Day18: App Brewery (Dr. Angela)	
+730am start time
+00am end time
+(0min) COMPLETE✅✅✅
+******
+******
+
+
+One of the most important steps to take in order to make the jump from
+learner coder to a fully fledged programmer is understanding how to get
+help. Everyone needs help. Everyone, including those so-called “God Level
+Programmers”
+
+But what you do with the help will determine how fast you progress as a
+coder. On a site like StackOverflow, it can be very tempting to just copy and
+paste the code that someone has provided. 
+
+
+exercise didn’t teach you anything other than code reliance. 
+
+same code snippet that someone provided may not work anymore. Then
+what do you do? You’re stuck
+
+ there’s a rule in programming that says “never copypaste code
+that you don’t understand”. So what should you do when you’re confronted
+with a block of code that solves your problem but you have no clue how it
+works? Break it down.
+
+Step 1 - Copy and paste the code
+Step 2 - Make sure that your program or application is functioning as
+expected.
+Step 3 - Delete the copy and pasted block of code LINE BY LINE.
+Step 4 - Each time you delete a line, check to see what’s been broken. Does
+the app still run? What are the error codes? What has deleting that line of
+code done to your program?
+ most important task as a programmer is to always test your
+assumptions against the outcome. For the most enjoyable feeling as a
+programmer is for the real world to validate your assumptions. 
+“You were right”.
+It’s like that, but better.
+Step 6 - Swap some of the lines around. Can the same functionality be
+achieved with a different order of lines? Why were they written in the order
+they were written in?
+By breaking the solution code, line-by-line, you’ll learn and understand what
+each line does and why it’s been written. This is a far better way to use code
+from other people than just pasting it in and hoping for the best. 
+Think about the structure of their program. Take a look at all the classes,
+the constants, the interplay. Make some modifications to the code. Does it
+still work or have you broken it? Why did you break it? Is there a link that
+you didn’t identify? Ask yourself a bunch of questions, learn through the
+SOCRATIC METHOD. Tear down the project and understand how it was built.
+
+When you start getting really good at this, the next thing you can try is
+reverse engineering. Find a small project on GitHub made by a reputable
+programmer, download the app. Run it and see all of its functionality. Play
+around with it.
+Then build it from scratch and once you’re done, compare your code to their
+code. Are there efficiency gains that you could have made? Are there
+solutions to things you couldn’t figure out? Now you’re really getting into the
+big leagues.
+
+
 
 ******
 ******
