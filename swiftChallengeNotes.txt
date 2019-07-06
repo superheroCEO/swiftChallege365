@@ -11,11 +11,32 @@ The more you type, the more practice.
 
 ******
 ******
+day33__Sat/7/6/_Day19: App Brewery (Dr. Angela)	
+645am start time
+00am end time
+(0min) COMPLETE
+******
+******
+
+Note use of OPTION + DRAG (to copy UI elements)
+Stacking UI elements together
+Equal distribution
+Points of spacing between UI elements
+Horizontal vs vertical stacking
+Clearing constrains; re-adding
+Use of Equal Widths
+Use of multipliers with stack views (ie 1:2.1)
+Achieving padding by modifying stack view, "align trailing to"
+
+
+******
+******
 day32__F/7/5/_Day18: App Brewery (Dr. Angela)	
 730am start time
 900am end time
 (90min) COMPLETE✅✅✅
-
+******
+******
 
 How to make designs look great across all devices, and/or orientation?
 1) programmatically 
