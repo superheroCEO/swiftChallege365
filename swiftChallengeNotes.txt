@@ -13,11 +13,40 @@ The more you type, the more practice.
 ******
 day33__Sat/7/6/_Day19: App Brewery (Dr. Angela)	
 645am start time
-00am end time
-(0min) COMPLETE
+830am end time
+(90min) COMPLETE
+
+345pm session2
+(30min)
 ******
 ******
 
+Classes == blueprints for creating objects w/certain properties
+KEYWORDS always in pink
+When creating new classes, new swift file required. Ensure TARGETS checkbox accurate
+Class CONVENTION == first letter Capitalized
+First thing's first: add the properties
+
+ENUMs are about creating CUSTOM DATA TYPES.
+SWIFT CONVENTION:
+
+	enum(s) declared at top 
+	enums Capitalized via camelcase ie enum CarType
+	cases w/I enums NOT CAPITALIZED. But first letter property is.
+	enum structure:
+		enum CarType {
+			case One
+			case Two
+			case Three
+		}
+
+
+dot notation to access Case types
+Enumerations && setting buttons titles(!) 
+
+Buttons use the Target-Action design pattern to notify your app when the user taps the button. Rather than handle touch events directly, you assign action methods to the button and designate which events trigger calls to your methods. At runtime, the button handles all incoming touch events and calls your methods in response.
+
+---
 Note use of OPTION + DRAG (to copy UI elements)
 Stacking UI elements together
 Equal distribution
