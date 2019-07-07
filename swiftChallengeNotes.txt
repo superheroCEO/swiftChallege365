@@ -11,6 +11,59 @@ The more you type, the more practice.
 
 ******
 ******
+day34__Sun/7/7/_Day20: App Brewery (Dr. Angela)	
+640am start time
+am end time
+(0min) COMPLE
+******
+******
+
+
+
+Enums allow for custom data types instead of using something ambiguous like, "1, 2, 3"
+Note open && close parenthesis () when creating new Class
+What are the various properties of our newly created object?
+
+What if we want a SPECIAL car beyond the STANDARD setting?
+Option 1: custom initializer
+init: "a set of statements that prepares AN INSTANCE of a class, structure, enumeration for use"
+What happens when init METHOD triggered?
+Note previous Car Class declaration had no parameter input
+Programming: predicting your outcome, comparing expectations, debugging
+INITIALIZER ALLOW YOU TO OVERRIDE DEFAULT SET PROPERTIES
+init METHOD is an EVENT (point in program where object gets created, "initialized")
+
+Designated vs convenience initializer 
+Designated init (default one) has compulsory parameters that require an input (cannot ignore)
+Convenience init == an optional initializer 
+"self. " ---> refers to own class
+Designated init w/ DEFAULT setting vs Convenience init w/optional Custom setting
+Convenience init == an add-on
+
+Note:	position of func when declaring it
+	dot notation allows access of Variable properties && Methods
+	V == Variable, M == Method
+	COMMAND + S whenever possible in Swift
+
+If func declared w/I class == METHOD
+METHOD ALWAYS ASSOCIATED W/AN OBJECT
+
+Recall:	Animal Kingdom INHERITANCE example
+Note:	you specify inheritance w/I Class declaration via COLON (:). Ie
+	class Mammals: Animals {
+	var hasHair: True
+}
+	class Birds: Animals {
+	func canFly() {}
+}
+	class Humans: Mammals {
+	func useComputer() {}
+}
+
+SUBCLASSES INHERIT FROM SUPERCLASS && INHERIT IT'S PROPERTIES && FXN
+
+******
+******
 day33__Sat/7/6/_Day19: App Brewery (Dr. Angela)	
 645am start time
 830am end time

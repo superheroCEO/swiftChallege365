@@ -10,3 +10,10 @@ import Foundation
 
 print("Hello Taylor Alison Swift!")
 
+let myCar = Car()
+
+let fancyCar = Car(customerChosenColour: "Burning Red")
+
+myCar.drive()
+
+
