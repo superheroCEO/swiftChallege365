@@ -15,9 +15,8 @@ The more you type, the more practice.
 ******
 day35__M/7/8/_Day21: App Brewery (Dr. Angela)	
 545am start time
-am end time
-(0min) COMPLETE
-
+715am end time
+(90min) COMPLETE✅✅✅
 ******
 ******
 
@@ -58,17 +57,38 @@ OPTIONAL BINDING
 Using optional binding, don't have to force unwrap (dangerous)
 IF LET safer
 
- 
+RECALL		variables as boxes
+	only when unwrap box: value or not?
+	? == could contain value or not
+		ie var destination: String?	[ String optional data type here]
+	! == to FORCE UNWRAP
+		ie var destination: String! 	["I know has value & not nil]
+	
+OPTIONAL BINDING== shake the box first (check to see IF has value)
+	String vs Optional String data type
+	data types have counterpart OPTIONAL (?) data type
+	! == force unwrapping (ie converts from String? --> String)
 
+IF LET
+	safer way
+	ONLY WHEN NOT NIL, execute declared code w/I braces { }
+
+		if let userSetDestination = destination {
+			print("driving towards " + userSetDestination)
+		}
+	===> "if let newConstantDeclared equal to value of Optional
+		if optional has value, execute print statement
+		if destination == NIL == CHECK NOT PASSED == print not executed		 
+	
 ******
 ******
 day34__Sun/7/7/_Day20: App Brewery (Dr. Angela)	
 640am start time
 8am end time
-(60min) COMPLETE
+(60min) COMPLETE✅✅
 
 8pm session2
-(30min) COMPLETE
+(30min) COMPLETE✅
 ******
 ******
 
@@ -147,10 +167,10 @@ Note:	you specify inheritance w/I Class declaration via COLON (:)
 day33__Sat/7/6/_Day19: App Brewery (Dr. Angela)	
 645am start time
 830am end time
-(90min) COMPLETE
+(90min) COMPLETEE✅✅✅
 
 345pm session2
-(30min)
+(30min) COMPLETE✅
 ******
 ******
 
