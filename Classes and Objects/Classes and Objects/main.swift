@@ -17,3 +17,8 @@ let fancyCar = Car(customerChosenColour: "Burning Red")
 myCar.drive()
 
 
+let mySelfDrivingCar = SelfDrivingCar()
+print(mySelfDrivingCar.colour)
+mySelfDrivingCar.drive()
+
+
