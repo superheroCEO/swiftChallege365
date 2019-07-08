@@ -13,6 +13,55 @@ The more you type, the more practice.
 
 ******
 ******
+day35__M/7/8/_Day21: App Brewery (Dr. Angela)	
+545am start time
+am end time
+(0min) COMPLETE
+
+******
+******
+
+
+recall: 	viewDidLoad
+		we know we inherit viewDidLoad() from UIViewController, but we want to 
+		OVERRIDE it's fxn, and + our own fxn
+		use of dot notation to access fxn
+
+
+Trying to OVERRIDE (add on) to existing fxn?
+KEYWORD:	super --> refers to Super class inherited from
+		ie super class of SelfDrivingCar == Car
+
+1st== 	carry out fxn from Car()
+		" super.drive() " 
+2nd==	add on new fxn for SelfDrivingCar
+
+
+1) INHERIT fxn from superclass
+2) OVERRIDE fxn to add on new fxn
+
+"" vs NO DATA (nil)
+nil/null pointer error
+? == "could contain a nil value" (done at creation stage== declaring var/constants)
+? == "could have a value, or not"
+! == to FORCE UNWRAP OPTIONAL for use
+! == serves as MANUAL OVERRIDE ("definitely does not have a value")
+
+OPTIONAL BINDING
+	check to see if declared variable/constant definitely has a value
+	SYNTAX	if let
+		let to create new constant
+		if to check 
+		print between { } ONLY gets executed when declared variable IS NOT NIL 
+		(has a value)
+
+Using optional binding, don't have to force unwrap (dangerous)
+IF LET safer
+
+ 
+
+******
+******
 day34__Sun/7/7/_Day20: App Brewery (Dr. Angela)	
 640am start time
 8am end time
