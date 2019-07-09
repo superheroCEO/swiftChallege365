@@ -13,6 +13,52 @@ The more you type, the more practice.
 
 ******
 ******
+day36__T/7/9/_Day22: App Brewery (Dr. Angela)	
+545am start time
+715am end time
+(90min) COMPLETE✅✅✅
+******
+******
+
+
+When using cocao pods, have to use WORKSPACE file (contains pods)
+//MARK:  --> to separate code into discrete sections
+
+Recall:		OPTION + hoverOver
+		+import CoreLocation
+		+ClLocationManagerDelegate
+		+let locationManager = CLLocationManager()  [creating new object]
+						*note: initialized w/no parameters
+
+"WeatherViewController subclass of UIViewController that CONFORMS to RULES of CLLMDelegate"
+
+locationManager.delegate = self ==> "refer to location manager ==> access delegate property via dot notation ==> set to self (WeatherViewController)
+[ we set ourselves at the delegate == the current ViewController ] 
+
+Asynchronous method == works in background (vs working in foreground)
+Only interested in most accurate location ~last value collected
+		
+		---> via [locations.count - 1]
+		to convert to String ---> String(input)
+
+If want to use Location Manager code, have to set delegate, class that will handle data
+	View Controller == "I will be the delegate"
+
+Dictionary holds data via key-value pair (order not important like arrays)
+Dictionary retrieves data via key in key-value pair
+
+Recall:		arrays && index positioning
+
+THINK:		CINEMA CLOAKROOM EXAMPLE
+
+	-->	let latitude = params["lat"]
+		let longitude = params["lon"]
+
+Arrays && dictionary == collection types == help organize data
+
+What are APIs?
+******
+******
 day35__M/7/8/_Day21: App Brewery (Dr. Angela)	
 545am start time
 715am end time
