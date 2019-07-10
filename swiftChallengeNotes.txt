@@ -15,12 +15,64 @@ The more you type, the more practice.
 ******
 day37__W/7/10/_Day23: App Brewery (Dr. Angela)	
 545am start time
-am end time
-(0min) COMPLETE✅
+8am end time
+	~20min break needed (too much mind Lv1)
+(90min) COMPLETE✅✅✅
 ******
 ******
 
+What's an API?
+	Application Programming Interface== contract app must follow in order to get
+	data from servers
+	a contract prewritten && specified
+	===>app makes REQUEST for API to website
+	===>app passes parameters
+	===>website returns RESPONSE that includes data
 
+Trying to make request from app to servers ==> make http REQUEST
+Response Handling == handling the Response of a Request
+Method dictates what want to do		.get request here
+Networking happens in asynchronous fashion
+
+Make request to browsers ---> receive HTML/CSS data
+Type of Request
+	GET - fetching data
+	POST - passing/adding data
+	DELETE - delete some data
+
+jSON	javascript Object Notation
+If checked for error already, reasonably safe to force unwrap (!)
+
+		jsoneditoronline.org
+
+jSON== whole bunch of dictionaries nested into an array
+
+We want to?
+	pull out relevant data
+	display to user via populating updates label/views w/updated data
+
+See in? 
+	===> inside a closure	
+	===> always have to specify SELF before method calls (self.___)
+
+Closure: fxn inside a fxn
+
+	let tempResult = json["main"]["temp"] == "temp result now assigned this value of 281.13"
+
+
+THINK:
+	1) declare variables
+	2) create new object(s)
+
+RECALL:	
+	CMD + /
+
+Converting json data to .intValue / .stringValue
+
+OPTIONAL BINDING == bindings his tempResult value to value get back from json (safety: checking for errors)
+
+Ideal place to call func?
+	~~>after set properties/updated properties
 
 
 ******
