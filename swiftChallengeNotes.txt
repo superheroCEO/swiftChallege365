@@ -11,6 +11,20 @@ The more you type, the more practice.
 	https://www.hackingwithswift.com/100
 	https://codewithchris.com/swift-tutorial-resources/
 
+
+******
+******
+day38__Th/7/11/_Day24: App Brewery (Dr. Angela)	
+8am start time
+ end time
+(0min) COMPLETE✅
+
+******
+******
+
+
+
+
 ******
 ******
 day37__W/7/10/_Day23: App Brewery (Dr. Angela)	
@@ -23,10 +37,12 @@ day37__W/7/10/_Day23: App Brewery (Dr. Angela)
 ******
 ******
 
+
 NSObject?
 UInt?
 didSet
 $0, $1?
+RECALL:		"rm testing.rtf" (USE CAUTION)
 ---
 
 What's an API?
