@@ -16,14 +16,40 @@ The more you type, the more practice.
 ******
 day38__Th/7/11/_Day24: App Brewery (Dr. Angela)	
 8am start time
- end time
-(0min) COMPLETE✅
+10amend time
+(90min net) COMPLETE✅✅✅
 
 ******
 ******
 
+Segues allow us to link View Controllers && other UI elements w/I View Controller such as buttons
+Segues help w/navigation
+	Click segue ---> Note blue highlight
+
+	to create new VC:
+		 CMD + n ---> COCOA TOUCH CLASS file
+Note:	SUBCLASS of UI View Controller (inherits from)
+Must go to IDENTITY INSPECTOR to link CLASS
+To link up segue, have to give it an identifier
+All View Controllers have method 	performSegue(withIdentifier___)
+
+Note:	use of SELF
+	use of OVERRIDE == override original method ____
+	use of as! --> cast as ___ (second View Controller here)
+	viewDidLoad == upon view loading
+2 ways to set up segues
+	1) from originating element
+	2) from viewController
+
+What user does on 1st screen ~~~> determines what happens on 2nd screen
 
 
+Need to pass data between two View Controllers, how?
+KEYWORD:	protocol (~~contract)
+
+	segueDestination as! ChangeCityViewController --> "data type of segue set as__"
+
+OPTIONAL CHAINING
 
 ******
 ******
@@ -73,7 +99,7 @@ jSON== whole bunch of dictionaries nested into an array
 
 We want to?
 	pull out relevant data
-	display to user via populating updates label/views w/updated data
+	display to user via populating updated label/views w/updated data
 
 See in? 
 	===> inside a closure	
@@ -93,7 +119,7 @@ RECALL:
 
 Converting json data to .intValue / .stringValue
 
-OPTIONAL BINDING == bindings his tempResult value to value get back from json (safety: checking for errors)
+OPTIONAL BINDING == binding this tempResult value to value get back from json (safety: checking for errors)
 
 Ideal place to call func?
 	~~>after set properties/updated properties
@@ -120,7 +146,11 @@ Recall:		OPTION + hoverOver
 
 "WeatherViewController subclass of UIViewController that CONFORMS to RULES of CLLMDelegate"
 
-locationManager.delegate = self ==> "refer to location manager ==> access delegate property via dot notation ==> set to self (WeatherViewController)
+locationManager.delegate = self 
+	==> "refer to location manager 
+	==> access delegate property via dot notation 
+	==> set to self (WeatherViewController)
+
 [ we set ourselves at the delegate == the current ViewController ] 
 
 Asynchronous method == works in background (vs working in foreground)
@@ -138,6 +168,7 @@ Dictionary retrieves data via key in key-value pair
 Recall:		arrays && index positioning
 
 THINK:		CINEMA CLOAKROOM EXAMPLE
+			name : coat vs "1-2-3-4-5-6...."
 
 	-->	let latitude = params["lat"]
 		let longitude = params["lon"]
@@ -169,7 +200,8 @@ POD INSTALL FLOW
 
 	pod init
 	open -a Xcode Podfile
-		delete # ---> + rq pods
+		delete HASHTAGS # 
+		+ rq pods
 
 	pod 'SwiftyJSON'
 	pod 'Alamofire'
@@ -219,11 +251,11 @@ IF LET safer
 RECALL		variables as boxes
 	only when unwrap box: value or not?
 	? == could contain value or not
-		ie var destination: String?	[ String optional data type here]
+		ie var destination: String?	(String optional data type)
 	! == to FORCE UNWRAP
-		ie var destination: String! 	["I know has value & not nil]
+		ie var destination: String! 	["I know has value & not nil"]
 	
-OPTIONAL BINDING== shake the box first (check to see IF has value)
+OPTIONAL BINDING== SHAKE BOX FIRST (check to see IF has value)
 	String vs Optional String data type
 	data types have counterpart OPTIONAL (?) data type
 	! == force unwrapping (ie converts from String? --> String)
@@ -300,11 +332,11 @@ Note previous Car Class declaration had no parameter input
 
 	Programming: predicting your outcome, comparing expectations, debugging
 
-INITIALIZER ALLOW YOU TO OVERRIDE DEFAULT SET PROPERTIES
+	INITIALIZERS ALLOW YOU TO OVERRIDE DEFAULT SET PROPERTIES
 init METHOD is an EVENT (point in program where object gets created, "initialized")
 
 Designated vs convenience initializer 
-	Designated init (default one) has compulsory parameters that require an input 		(cannot ignore)
+	Designated init (default one) has compulsory parameters that require an input (cannot ignore)
 	Convenience init == an optional initializer 
 	"self. " ---> refers to own class
 Designated init w/ DEFAULT setting vs Convenience init w/optional Custom setting
