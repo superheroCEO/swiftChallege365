@@ -23,6 +23,12 @@ day37__W/7/10/_Day23: App Brewery (Dr. Angela)
 ******
 ******
 
+NSObject?
+UInt?
+didSet
+$0, $1?
+---
+
 What's an API?
 	Application Programming Interface== contract app must follow in order to get
 	data from servers
