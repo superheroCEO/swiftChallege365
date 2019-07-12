@@ -19,13 +19,32 @@ Big difference between knowing the path, and walking the path.
 ******
 day39__F/7/12/_Day25: App Brewery (Dr. Angela)	
 630am start time
-am end time
-(0min net) COMPLETE✅
+8am end time
+(60min net) COMPLETE✅✅
 
 ******
 ******
+	TO DO:	repeat #165 && #167 == creating/using Segues && passing data
 
+link View Controllers by segues 
+func prepare for segue...
+as!	create reference for 1st View Controller && cast as Second View Controller
+Protocol == same hierarchical level as classes
+Protocol == sets up rules of engagement
+if going to be delegate, have to be able to handle data
 
+Think:	
+	1) create protocol
+	2) conform to protocol
+	3) implement required delegate method
+	4) create delegate object variable
+
+RECALL:
+	click element
+	CTR + DRAG to where want to link up segue to
+	created new View Controller?
+		==> identity inspector, assign Class to ___
+	setting destination as! Second View Controller
 
 
 ******
@@ -98,8 +117,10 @@ Segues help w/navigation
 
 	to create new VC:
 		 CMD + n ---> COCOA TOUCH CLASS file
+
 Note:	SUBCLASS of UI View Controller (inherits from)
-Must go to IDENTITY INSPECTOR to link CLASS
+	Must go to IDENTITY INSPECTOR to link CLASS
+
 To link up segue, have to give it an identifier
 All View Controllers have method 	performSegue(withIdentifier___)
 
@@ -107,6 +128,7 @@ Note:	use of SELF
 	use of OVERRIDE == override original method ____
 	use of as! --> cast as ___ (second View Controller here)
 	viewDidLoad == upon view loading
+
 2 ways to set up segues
 	1) from originating element
 	2) from viewController
