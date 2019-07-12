@@ -4,12 +4,15 @@
 
 “Lucious is safe”
 The more you type, the more practice.
+Big difference between knowing the path, and walking the path.
+
 "I can do all things through Christ, who strengthens me."
 	ONLY BY ACTUALLY TYPING IN SWIFT CODE TO YOU BEGIN TO GRASP IT
 
 
 	https://www.hackingwithswift.com/100
 	https://codewithchris.com/swift-tutorial-resources/
+	https://www.raywenderlich.com/ios/learn
 
 
 ******
@@ -19,11 +22,65 @@ day38__Th/7/11/_Day24: App Brewery (Dr. Angela)
 10am end time
 (90min net) COMPLETE✅✅✅
 
-350pm session2
-(40min)
+350pm session2 (40min)
+
+830pm session3 (30min)
+
 ******
 ******
 
+
+1) figure out what need to do
+2) figure out how to do it
+
+Programming To-do ==> list of all fxn
+			---> break down into baby steps
+
+	-text label description
+	-score tabel
+	-score label w/incremental score
+	-round label  w/incremental rounds
+	-hit me button
+	-restart button
+	-info button
+	-slider from 1-100
+	-pop up notification w/text 
+	+generate random #
+	+calculate score
+	+reset game if tap button
+	+app in landscape
+	+make app pretty
+
+
+1) hit me button
+	connecting action to code
+
+View Controller job: to manage a single screen in your app
+	sometimes a portion of a screen
+Two parts of View Controller
+	Main.storyboard (Design)
+	ViewController.swift (code == logic)
+
+select Hit Me button --> HOLD CTR --> drag to View Controller --> click show alert 
+
+	example: Recipe List
+			recipe list ---> recipe details	
+	2 screens == 2 View Controllers
+	
+			RecipeListViewController
+			RecipeDetailViewController
+
+Recall:		@IBAction func nameOfFunction() { }
+
+---
+NSObject?
+It is one of the few root classes in Cocoa (the other immediately coming to mind is NSProxy). This predates Swift by a quarter of a century, mind you ;) It offers a number of useful features such as a default memory allocation scheme, a default comparison scheme  and the most important, being a root class it kickstarts the message passing machinery...
+https://www.quora.com/What-is-NSObject-When-do-Swift-developers-need-to-use-NSObject
+
+UInt?
+didSet
+$0, $1?
+---
 Segues allow us to link View Controllers && other UI elements w/I View Controller such as buttons
 Segues help w/navigation
 	Click segue ---> Note blue highlight
@@ -67,6 +124,7 @@ day37__W/7/10/_Day23: App Brewery (Dr. Angela)
 
 
 NSObject?
+
 UInt?
 didSet
 $0, $1?
