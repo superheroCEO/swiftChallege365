@@ -22,6 +22,8 @@ day39__F/7/12/_Day25: App Brewery (Dr. Angela)
 8am end time
 (60min net) COMPLETE✅✅
 
+1130am session2 (30min)
+
 ******
 ******
 	TO DO:	repeat #165 && #167 == creating/using Segues && passing data
