@@ -17,6 +17,18 @@ Big difference between knowing the path, and walking the path.
 	https://codewithchris.com/swift-tutorial-resources/
 	https://www.raywenderlich.com/ios/learn
 
+******
+******
+day40__Sat/7/13/_Day26: App Brewery (Dr. Angela)	
+7am start time
+am end time
+(0min net) COMPLETE✅✅
+
+******
+******
+
+
+
 
 ******
 ******
@@ -27,7 +39,6 @@ day39__F/7/12/_Day25: App Brewery (Dr. Angela)
 
 1130am session2 (30min)
 930pm session3	(30min)
-
 ******
 ******
 
