@@ -21,14 +21,42 @@ Big difference between knowing the path, and walking the path.
 ******
 day40__Sat/7/13/_Day26: App Brewery (Dr. Angela)	
 7am start time
-am end time
-(0min net) COMPLETE✅✅
-
+8am end time
+(60min) COMPLETE✅✅
 ******
 ******
 
+Delegate && protocols explained via 6 steps
+	1) create Delegate protocol
+		protocol ChangeCityDelegate { fxn }
+	2) conform to protocol
+		+adding to ViewController class declaration
+	3) implement required method
+	4) create delegate property (var delegate 
+	5) set ourselves as delegate	(destinationVC.delegate = self)
+	6) call Delegate method
 
+delegate? ---> is delegate set or nil; if nil == line gets ignored
 
+Receiver vs Protocol vs Sender
+
+Delegate pattern always for reuse of components
+
+CTR + CMD + SPACE == emoji inspector
+
+Bash == Bourne Again Shell
+why use command line? 
+	greater control && efficiency
+		mkdir
+		ls 	ls -l (long) -a (include all files)
+		ls (list)
+		cd (change directory)
+		cd ~ (home directory)
+		cd / (root)
+		cd ..
+		CTR + ( A | E | U [clear line] )
+		CTR + L | clear
+		CTR + C (kill whatever running)
 
 ******
 ******
