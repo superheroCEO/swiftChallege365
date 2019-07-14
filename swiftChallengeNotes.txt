@@ -11,11 +11,24 @@ Big difference between knowing the path, and walking the path.
 	No rest for the wicked
 	iOS app don't grow on trees
 	all about learning via repetition
+	even when you're wrong, you're still learning
 
 
 	https://www.hackingwithswift.com/100
 	https://codewithchris.com/swift-tutorial-resources/
 	https://www.raywenderlich.com/ios/learn
+
+******
+******
+day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)	
+1145am start time
+am end time
+(60min) COMPLETE✅✅
+******
+******
+
+
+
 
 ******
 ******
