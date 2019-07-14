@@ -9,7 +9,7 @@ Big difference between knowing the path, and walking the path.
 "I can do all things through Christ, who strengthens me."
 	ONLY BY ACTUALLY TYPING IN SWIFT CODE TO YOU BEGIN TO GRASP IT
 	No rest for the wicked
-	iOS app don't grow on trees
+	iOS apps don't grow on trees
 	all about learning via repetition
 	even when you're wrong, you're still learning
 
@@ -24,6 +24,8 @@ day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)
 1145am start time
 130pm end time
 (90min) COMPLETE✅✅
+
+410pm sess2 (30min) 
 ******
 ******
 
@@ -52,6 +54,7 @@ recall		CMD + /
 Date picker vs view picker
 Picker sends message to View Controller (which currency was selected)
 
+The structure of UIKit apps is based on the Model-View-Controller (MVC) design pattern, wherein objects are divided by their purpose. Model objects manage the app’s data and business logic. View objects provide the visual representation of your data. Controller objects act as a bridge between your model and view objects, moving data between them at appropriate times.
 
 
 ******
