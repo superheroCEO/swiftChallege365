@@ -22,11 +22,35 @@ Big difference between knowing the path, and walking the path.
 ******
 day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)	
 1145am start time
-am end time
-(60min) COMPLETE✅✅
+130pm end time
+(90min) COMPLETE✅✅
 ******
 ******
 
+LearnEnough.com
+
+
+	mkdr (make directory)
+	touch newFile.txt
+	open -a Xcode newFile.txt
+	rm newFIle.txt
+	rm * (wildcard; remove all of this type)
+	rm -r newDirectory
+
+scroll wheel == UIPicker == selecting multiple options
+Count method 
+
+recall		CMD + /
+		Connection Inspector && setting up outlets
+		pod init
+		pod -a Xcode Podfile
+		pod install
+		if let (optional binding)
+			bind result of " json["ask"].double to bitcoinResult var "
+				if not nil, execute line of code
+
+Date picker vs view picker
+Picker sends message to View Controller (which currency was selected)
 
 
 
