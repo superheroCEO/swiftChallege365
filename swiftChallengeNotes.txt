@@ -30,6 +30,111 @@ day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)
 ******
 ******
 
+
+An app is made of objects 
+	some provided by iOS; some written by you
+
+Objects community by passing messages back & forth 
+	UI BUTTON ===> "showAlert!" ===> View Controller
+
+App are EVENT DRIVEN
+	objects wait for events to occur, then process
+
+App spends most time doing nothing == milli seconds
+
+	1) User taps screen
+		---> iOS detects touch, determines button tapped
+	2) Touch event
+		---> UIButton "you've been touched"
+	3) showAlert
+		---> View Controller
+			button sends showAlert message to VC
+	4) init, addAction
+		---> UIAlertController
+			View Controller creates UIAlertController object, send "add action"
+
+EVERYTHING APP DOES TRIGGERED BY SOME EVENT
+
+points vs pixels
+	developers work w/points
+	designers work w/pixels
+
+What is an object?
+
+Programmers likes to group related fxn into objects
+	job: parse file
+	job: authenticate user
+	job: perform calculation
+
+
+View Controller object (UIViewController)
+Alert object (UIAlertController)
+Button object (UIButton)
+"Hit Me" object (string)
+
+An object can have data && fxn; 
+	HIT ME button:
+		data == label color, position, width, height
+		fin == recognize user tap, highlight self, trigger action
+
+Methods provide fxn
+
+A method is simply a function that belongs to an object
+
+Example: THROW PARTY
+
+	func throwParty() {
+	 	clean up
+		put on kickass music
+		// forgot to buy cookies
+		steve.buyCookies(13)
+		eat cookies
+	}
+-->invited Steve object to party w/fxn:
+	func buyCookies(howMany: Int) {
+		bust out cash
+		go to store
+		buy cookies
+		pay for cookies
+	}
+
+
+what are strings?
+	imagine bunch of characters strung together on a wire
+String interpolation (allow placeholder value that's replaced dynamically by code when app runs)	
+	"Hello, \(gorgeousName)!"
+		===>
+		"Hello, Taylor Alison Swift!"
+==> \ (   )
+
+Variable value can vary (vs constant)
+THINK:	children's blocks
+	variables === blocks
+	values == shapes
+		value type determines what shape fits
+"Put the right shape into the right container"
+
+Syntax:
+	var variableName: Type = InitialValue
+	
+	var taylorAge: Int = 29
+	var gorgeousName: String = "Taylor Alison Swift"
+	var currentValue: Int = 0
+
+Type safety; have to be explicit 
+Float --> Int?
+	var x: Float = 3.13 
+	var y: Int = Int(x)
+
+One type to another == "casting"
+
+Scope: how long variable lives
+	local vs global
+
+
+--
+RAY
+--
 LearnEnough.com
 
 
@@ -111,7 +216,7 @@ day39__F/7/12/_Day25: App Brewery (Dr. Angela)
 ******
 ******
 
-Alter in 4 steps
+Alert in 4 steps
 	1) create Alert Controller (UIAlertController)
 		title
 		message
