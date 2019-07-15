@@ -24,9 +24,10 @@ Big difference between knowing the path, and walking the path.
 ******
 day42__M/7/15/_Day28: App Brewery (Dr. Angela)	
 630am start time
-m end time
-(0min) COMPLETE✅✅
+8am end time
+(90min) COMPLETE✅✅
 
+130pm	sess2 (60min)
 
 ******
 ******
