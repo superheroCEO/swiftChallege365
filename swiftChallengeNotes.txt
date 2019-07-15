@@ -3,6 +3,7 @@
 "Rise, let us be on our way"
 “Lucious is safe”
 "I can do all things through Christ, who strengthens me."
+"For what will it profit a man if he gains the whole world and forfeits his soul?"
 
 The more you type, the more practice.
 Big difference between knowing the path, and walking the path.
@@ -17,6 +18,64 @@ Big difference between knowing the path, and walking the path.
 	https://www.hackingwithswift.com/100
 	https://codewithchris.com/swift-tutorial-resources/
 	https://www.raywenderlich.com/ios/learn
+
+******
+******
+day42__M/7/15/_Day28: App Brewery (Dr. Angela)	
+630am start time
+m end time
+(0min) COMPLETE✅✅
+
+
+******
+******
+One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database.
+
+Enter Firebase - cloud based infrastructure; acts a backend provider
+Save && retrieve data from google services
+Two core features:
+	1) real-time database
+		store our data on G servers
+		have multiple devices retrieve data
+	2) authentication 
+
+
+Working w/FB Realtime Database, not Cloud Firestore
+
+
+1) connect up app --> configure database
+	FirebaseApp.configure()
+
+When app launched, first file called, AppDelegate 
+	let myDatabase = Database.database().reference()
+		reference to brand new database w/I our database
+
+Note comma on read/write rules == true, 
+
+2) set up authentication
+
+Recall: 
+	pinch-to-zoom
+	connecting segues
+		Click <element> --> CTR + DRAG --> Destination release
+	all segues need an identifier @Storyboard ( "goToChat" )
+	CMD + ENTER (single editor screen)
+	(completion?)	select PLACEHOLDER text ==> enter 
+	if error != nil  ('there was an error')
+	secure text entry field @main.storyboard --> password textfield box
+	performSegue method == common to all View Controllers
+	see in ? 
+		inside closure (fxn w/I a fxn). A fxn w/no name
+			when inside closures, have to specify where this method occurs
+				(current class ---> self. BEFORE closure name declaration)
+
+"Auth.auth().createUser..."	
+	tap into FB authentication
+	get authentication object
+	use method to create new user
+
+Callback triggered --> want to check if errors got sent back
+
 
 ******
 ******
