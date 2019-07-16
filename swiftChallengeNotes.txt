@@ -28,10 +28,62 @@ day42__M/7/15/_Day28: App Brewery (Dr. Angela)
 (90min) COMPLETE✅✅
 
 130pm	sess2 (60min)
-6pm	sess3 (
+6pm	sess3 (60min)
+******
+******
 
-******
-******
+Var has a lifetime (scope)
+Where define var effects scope
+
+3 levels of scope in Swift
+	Global scope
+		exist for duration of app && can be accessed from anywhere 
+	Instance scope
+		alive for as long as the object that owns them is alive
+		think your current value
+	Local scope
+		only exist for the duration of method 
+
+Instance variable == scope is the same as the object's instance that it belongs too
+	use if want to keep around from one action to the next 
+
+Recall
+	Referencing Outlets via right-click
+		New Referencing Outlet
+			+ drag ---> View Controller
+	\n	new line
+	self.startNewRound()
+		View Controller sending message to itself
+
+	DRY	Don't. Repeat. Yourself.
+	consider making new method for it
+	generating random #
+		randomValue = Int.random(in: 1...113)
+
+Creating a method
+	func yourFuncName() {
+		//sexy code here
+	}
+
+Methods invoked by UIKit ( func viewDidLoad() )
+Vs
+Methods called by you
+
+calling methods between the same object
+
+Format to call method on object:
+	receiver.methodName(parameters)
+		receiver == object sending message to
+			can leave out self in most cases
+			ie "  alert.addAction(action)  "
+		
+
+Swift programming == a lot of calling methods on objects
+===
+RayW
+===
+
+
 One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database.
 
 Enter Firebase - cloud based infrastructure; acts a backend provider
@@ -79,6 +131,7 @@ Recall:
 
 Callback triggered --> want to check if errors got sent back
 
+----------------------------------------------------------
 
 ******
 ******
@@ -88,7 +141,7 @@ day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)
 (90min) COMPLETE✅✅
 
 410pm sess2 (30min) 
-640pm sess3 (
+640pm sess3 
 ******
 ******
 
@@ -96,13 +149,13 @@ day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)
 An app is made of objects 
 	some provided by iOS; some written by you
 
-Objects community by passing messages back & forth 
+Objects communicate by passing messages back & forth 
 	UI BUTTON ===> "showAlert!" ===> View Controller
 
-App are EVENT DRIVEN
+Apps are EVENT DRIVEN
 	objects wait for events to occur, then process
 
-App spends most time doing nothing == milli seconds
+App spends most time doing nothing == milliseconds
 
 	1) User taps screen
 		---> iOS detects touch, determines button tapped
@@ -137,11 +190,10 @@ Button object (UIButton)
 An object can have data && fxn; 
 	HIT ME button:
 		data == label color, position, width, height
-		fin == recognize user tap, highlight self, trigger action
+		fxn == recognize user tap, highlight self, trigger action
 
 Methods provide fxn
-
-A method is simply a function that belongs to an object
+	method is simply a function that belongs to an object
 
 Example: THROW PARTY
 
@@ -152,7 +204,7 @@ Example: THROW PARTY
 		steve.buyCookies(13)
 		eat cookies
 	}
--->invited Steve object to party w/fxn:
+					-->invited Steve object to party w/fxn:
 	func buyCookies(howMany: Int) {
 		bust out cash
 		go to store
@@ -184,6 +236,7 @@ Syntax:
 	var currentValue: Int = 0
 
 Type safety; have to be explicit 
+
 Float --> Int?
 	var x: Float = 3.13 
 	var y: Int = Int(x)
@@ -222,7 +275,10 @@ recall		CMD + /
 Date picker vs view picker
 Picker sends message to View Controller (which currency was selected)
 
-The structure of UIKit apps is based on the Model-View-Controller (MVC) design pattern, wherein objects are divided by their purpose. Model objects manage the app’s data and business logic. View objects provide the visual representation of your data. Controller objects act as a bridge between your model and view objects, moving data between them at appropriate times.
+	The structure of UIKit apps is based on the Model-View-Controller (MVC) design pattern, wherein objects are divided by their purpose. 
+	Model objects manage the app’s data and business logic. 
+	View objects provide the visual representation of your data. 
+	Controller objects act as a BRIDGE between your model and view objects, moving data between them at appropriate times.
 
 
 ******

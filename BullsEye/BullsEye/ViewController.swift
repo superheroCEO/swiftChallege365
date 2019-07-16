@@ -11,23 +11,38 @@ import UIKit
 class ViewController: UIViewController {
 
     var currentValue: Int = 0
+    var targetValue: Int = 0
+    
+    
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var targetLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let roundedValue = slider.value.rounded()
+        currentValue = Int(roundedValue)
+        
+        startNewRound()
+    
     }
 
     @IBAction func showAlert() {
     //print("Hi Taylor Alison Swift!")
-        let message = "The value of slider is now: \(currentValue)"
+        let message = "The value of slider is now: \(currentValue)" + "\nThe target value is: \(targetValue)"
         
-        let alert = UIAlertController(title: "Hi Taylor Alison Swift", message: "With you, I'm all in.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Hi Taylor!", message: message, preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Fantastic", style: .default, handler: nil)
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+        
+        startNewRound()
+        
         
     }
     
@@ -40,5 +55,17 @@ class ViewController: UIViewController {
     }
     
 
+    func startNewRound() {
+        targetValue = Int.random(in: 1...100)
+        currentValue = 50
+        slider.value = Float(currentValue)
+        
+        updateLabels()
+    }
+    
+    func updateLabels() {
+        targetLabel.text = String(targetValue)
+        
+    }
 }
 
