@@ -26,6 +26,8 @@ day43__Tu/7/16/_Day22: App Brewery (Dr. Angela)
 530am start time
 713am end time
 (90min net) COMPLETE✅✅✅
+
+4pm sess2
 ******
 ******
 
