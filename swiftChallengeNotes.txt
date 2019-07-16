@@ -22,22 +22,79 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
-day43__T/7/16/_Day22: App Brewery (Dr. Angela)	
+day43__Tu/7/16/_Day22: App Brewery (Dr. Angela)	
 530am start time
-am end time
-(0min) COMPLETE✅✅
-
+713am end time
+(90min net) COMPLETE✅✅✅
 ******
 ******
 
+Closures == anonymous fxn; self contained packets of fxn we can use
+	input --> function ---> output
+	anotherFxn (input) --> myFunction ---> yetAnotherFxn (output)
 
+What if we wanted to pass in fxn as an input?
+Can pass fxn as input parameter 
+Can use fxn as return type 
+
+	func nameOfFunc(input) --> Output { fxn }
+
+To convert func to closure:
+	XXX func declaration
+	XXX func name
+	move { to beginning of declaration
+	replace { with in
+
+	can remove 
+		explicit data declarations 
+		return keyword 
+
+Closure have ability to provide anonymous parameter names
+	$0 (first param)
+	$1 (second param)
+
+	if last parameter a closure, can remove closure name && just have trailing closure
+
+Strike balance between simplicity && readability 
+
+for loop vs map (map takes another fxn as input)
+
+	map, reduce, filter
+
+Closure Expression Syntax (general form):
+
+	{ (parameters) -> return type in
+		statements
+	}
+
+Recall MVC
+	model (data)
+	view (what user sees)
+	controller (facilitates messages btw Model && View)
+
+	the anatomy of an App (how an app works)
+		Button && ViewController example
+			User clicks button
+				Button to ViewController ('hey got clicked, you need to update view')	
+	operating system / View Controller / database ===> View Controller
+
+Apps are event driven; writing code in anticipation of events
+Events are messages that can be triggered
+
+App lifecycle
+	app launched
+	app visible
+	app recedes into background (held in memory)
+	app recalled (resources reclaimed)
+
+Swift coding ~~anticipation of messages
 
 ******
 ******
 day42__M/7/15/_Day28: App Brewery (Dr. Angela)	
 630am start time
 8am end time
-(90min) COMPLETE✅✅
+(90min) COMPLETE✅✅✅
 
 130pm	sess2 (60min)
 6pm	sess3 (60min)
@@ -150,7 +207,7 @@ Callback triggered --> want to check if errors got sent back
 day41__Sun/7/14/_Day27: App Brewery (Dr. Angela)	
 1145am start time
 130pm end time
-(90min) COMPLETE✅✅
+(90min) COMPLETE✅✅✅
 
 410pm sess2 (30min) 
 640pm sess3 
