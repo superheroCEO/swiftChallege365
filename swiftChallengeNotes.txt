@@ -24,13 +24,85 @@ Big difference between knowing the path, and walking the path.
 ******
 day44__W/7/17/_Day23: App Brewery (Dr. Angela)	
 545am start time
-am end time
-(min net) COMPLETE✅✅✅
+745am end time
+(90min net) COMPLETE✅✅✅
 
 ******
 ******
 
+"Throws" == this fxn can Throw an error
+We know certain fxn can fail ahead of time
+When it's a method that can throw an error, have to call method in DO TRY CATCH block
+	do { "this is the line of code that could give us trouble }
+	+KEYWORD try before line code declaration
 
+View Controllers are stacked ON TOP of each other && can be nested inside Navigation Controller
+	gives Navigation Bar at top of View Controller(s)
+Navigation Controller makes it easy to go forwards && backwards
+	w/Nav Controller, get access to Back Button && Swipe feature
+
+To embed View Controller(s) inside Navigation Controller
+	====>EDITOR
+		===>EMBED IN: NAVIGATION CONTROLLER
+W/segues: show vs. present modally
+		(part of Navigation path vs not-linked && will pop up)
+
+THINK:	Pancake example
+
+Recall:		remember to always import Framework(s) at top
+		segue identifiers && navigation
+		have to specify KEYWORD self before performSegue declaration if INSIDE A CLOSURE
+		status bar vs Navigation Bar 
+		Table View Controller drag vs Table View embed
+		Table View embedded inside View Controller
+		+adopt protocols
+			UITableViewDelegate
+			UITableViewDataSource
+
+		
+
+Auth.auth().signIn(with...) method via FB 
+
+Table Views able to display number of cells one after another; can scroll vertically
+	-lists that only have rows
+
+1) adopt protocols
+2) set Class as delegate
+	messageTableView.delegate = self
+	messageTableView.dataSource = self
+3) +rq methods
+	cellForRowAt	== what to display
+		only loads up cells necessary to fill screen
+		top cell offscreen becomes bottom cell offscreen
+		reusing ~8/9 cells
+Custom Cells created
+	given identifier
+
+	let cell = tableView.dequeueReusableCell(withIdentifier....
+		indexPath refers to location w/initializing 
+		indexPath == location identifier
+	have to specify class as! Custom Cell ('an object of type CustomMessageCell')
+
+to create new Custom cells
+	===> +CocoaTouchClass
+		==>subclass of UITable View
+			MUST checkbox "Also create xib file" 
+	what look like? (Xib == design file)
+	what do? (Beh of cell == Swift file)
+
+Must register xib file @viewDidLoad
+	message.TableView.register...
+
+1) cellForRowAt...
+2) .dequeueReusableCell...
+3) message.TableView.register...
+
++sections?
+	numberOfSections	(return x)
+
+44 height == standard for cells
+
+configureTableView() 	initialize it
 
 
 ******
