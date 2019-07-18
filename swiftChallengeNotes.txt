@@ -24,13 +24,39 @@ Big difference between knowing the path, and walking the path.
 ******
 day45__Th/7/118/_Day24: App Brewery (Dr. Angela)	
 530am start time
-am end time
-(min) COMPLETE✅✅✅
+645am end time
+(75min) COMPLETE✅✅
 
 ******
 ******
 
 
+	One can explicitly write @objc on any Swift declaration that can be expressed in Objective-C. As a convenience, Swift also infers @objc in a number of places to improve interoperability with Objective-C and eliminate boilerplate. This proposal scales back the inference of @objc to only those cases where the declaration must be available to Objective-C to maintain semantic coherence of the model, e.g., when overriding an @objc method or implementing a requirement of an @objc protocol. Other cases currently supported (e.g., a method declared in a subclass of NSObject) would no longer infer @objc, but one could continue to write it explicitly to produce Objective-C entry points.
+
+Tween animations involve defining beginning && ending position of UI Image && specifying time to complete
+Note:	@IBOutlet linked to contraints
+		change height constraint programmatically to expand to larger field of UI Table View
+
+1) detecting when user tapped text field
+	+UITextFieldDelegate (setting up Chat VC as delegate)
+	+explicitly set Chat VC as delegate (+self)
+
+view.layoutIfNeeded()
+UIView.animate(withDuration...
+A trailing closure that includes animation instructions
+Can register a custom Tag recognizer
+	let tapGesture = UITapGestureRecognizer...
+	
+KEYWORD:	#selector (obj-C legacy)
+			sometimes, need to call methods on objects we don't know about until app is running (at runtime)
+
+func tableViewTapped...
+
+Temporarily disabling text field && send button
+[ ] == for collections (arrays & dictionaries)
+
+
+	
 
 
 
