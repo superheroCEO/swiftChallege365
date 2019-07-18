@@ -28,9 +28,12 @@ day45__Th/7/118/_Day24: App Brewery (Dr. Angela)
 (75min) COMPLETE✅✅
 
 1215pm sess2 (60min) 247 rev
+320pm sess3 (60min) 247 rev
+
 ******
 ******
 
+? 20 : 120
 NSAttributedString?
 ----
 	One can explicitly write @objc on any Swift declaration that can be expressed in Objective-C. As a convenience, Swift also infers @objc in a number of places to improve interoperability with Objective-C and eliminate boilerplate. This proposal scales back the inference of @objc to only those cases where the declaration must be available to Objective-C to maintain semantic coherence of the model, e.g., when overriding an @objc method or implementing a requirement of an @objc protocol. Other cases currently supported (e.g., a method declared in a subclass of NSObject) would no longer infer @objc, but one could continue to write it explicitly to produce Objective-C entry points.
