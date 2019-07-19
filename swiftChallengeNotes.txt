@@ -26,19 +26,32 @@ Big difference between knowing the path, and walking the path.
 ******
 day46__F/7/19/_Day25: App Brewery (Dr. Angela)	
 545am start time
-6am end time
-(min) COMPLETE✅✅
+715am end time
+(90min) COMPLETE✅✅
 
-1215pm sess2 (60min) 247 rev
-320pm sess3 (60min) 247 rev
-6pm sess4 (30min net) RW
 ******
 ******
 
+//MARK: -	for separating out code
+//TODO: 	also appears in index outline
+	P == properties
+	M == methods
+Any?	any object, legacy from objC
+Convert, aka cast it, as known data type
+	as! "Treat this data as .... a known dictionary"
+Dictionary<String, String>
+! Note use to unwrap optionals data
+let message = Message()  (to create new message object)
+...cellForRowAt		gets called for every cell
+return messageArray.count	want to return count of the message array vs ~"3" (only 3)
+SVProgressHUD (heads up display ~~ progress spinner)
+	SVProgressHUD.show()
+	SVProgressHUD.dismiss()
+
+messageTableView.separatorStyle = .none
 
 
-
-
+******
 ******
 day45__Th/7/18/_Day24: App Brewery (Dr. Angela)	
 530am start time
