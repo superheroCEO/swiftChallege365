@@ -20,6 +20,8 @@ Big difference between knowing the path, and walking the path.
 	https://codewithchris.com/swift-tutorial-resources/
 	https://www.raywenderlich.com/ios/learn
 
+	-->	https://www.hackingwithswift.com/articles/113/nsattributedstring-by-example
+
 ******
 ******
 day45__Th/7/118/_Day24: App Brewery (Dr. Angela)	
@@ -29,12 +31,52 @@ day45__Th/7/118/_Day24: App Brewery (Dr. Angela)
 
 1215pm sess2 (60min) 247 rev
 320pm sess3 (60min) 247 rev
+6pm sess4 (30min net) RW
 
 ******
 ******
 
+Algo == series of steps to solve a computational problem 
+Stuck? ~write out steps in plain English 
+
+IF statement
+	if something is true {
+		then do this
+	} else if something else is true {
+		then do that instead
+	} else {
+		do something when neither of the above are true
+	}
+
+var difference = currentValue - targetValue
+if difference < 0 {
+	difference = difference * -1 || difference *= -1 || difference = -difference 
+let difference = abs(targetValue - currentValue)
+
+var== changeable at any time
+let== constant == once set, cannot change 
+
+Rule of thumb: prefer let
+
+Type inference
+
+OPTION + CLICK
+
+score += points --> score = score + points
+
+RT CLICK element ---> New Referencing Outlet
+		CTR + CLICK__drag (@ element VC for @IBOulet )
+
+
+===
+RW
+====
+--
 ? 20 : 120
 NSAttributedString?
+	Swift's strings are great for storing plain text, but as soon as you want formatting, images, or interactivity you need to reach for NSAttributedString - Foundation’s all-in-one string handling class. These are used in various places in iOS and macOS, but you're most likely to want to use them with UILabel and UITextView, both of which accept attributed strings directly.
+
+
 ----
 	One can explicitly write @objc on any Swift declaration that can be expressed in Objective-C. As a convenience, Swift also infers @objc in a number of places to improve interoperability with Objective-C and eliminate boilerplate. This proposal scales back the inference of @objc to only those cases where the declaration must be available to Objective-C to maintain semantic coherence of the model, e.g., when overriding an @objc method or implementing a requirement of an @objc protocol. Other cases currently supported (e.g., a method declared in a subclass of NSObject) would no longer infer @objc, but one could continue to write it explicitly to produce Objective-C entry points.
 
