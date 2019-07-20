@@ -27,11 +27,52 @@ Big difference between knowing the path, and walking the path.
 ******
 day47__Sat/7/20/_Day26: App Brewery (Dr. Angela)	
 630am start time
-am end time
-(min) COMPLETE✅✅
-
+830am end time
+(75min net) COMPLETE✅✅
 
 ******
+******
+
+
+===>attribute inspector box: "is initial VC" 
+Note: 	Table VC not currently linked to .swift file
+		===> inherit from UITableViewController
+		===> change .swift file name && class declaration 
+	recall: @identity inspector== specify class
+		===> select prototype cell 
+			===>reuse identifier ie 'TodoItemCell'
+
+Want VC to have Nav bar: 
+	Embed in Nav controller
+		==>select VC===> EDITOR ==> "embed in Nav controller"
+	+title
+	+/- change color (bar tint)
+
+Set items array
+numberOfRowsInSection...	return itemArray.count
+cellForRowAt
+Table VC local vs global 
+===> 1) dequeue cell (dequeueReusableCell)
+===> set text label 
+
+//MARK - TableView DataSource Methods
+		numberOfRowsInSection...
+			return itemArray.count
+		cellForRowAt...
+			dequeueReusableCell
+			set text label
+	vs
+//MARK - TableView Delegate Methods
+		didSelectRowAt...
+
+@TodoItemCell ==> Accessory "checkmark"
+
++bar Button Item ===> System Item "Add" && change tint color?
+	let alert = UIAlertController (title/message/prefStyle)
+		vs
+	let action = UIAlertAction
+	alert.addAction
+	present(alert/true/nil)
 
 ******
 ******
