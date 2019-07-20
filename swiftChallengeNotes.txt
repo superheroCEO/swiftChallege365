@@ -21,6 +21,7 @@ Big difference between knowing the path, and walking the path.
 	https://www.raywenderlich.com/ios/learn
 
 	-->	https://www.hackingwithswift.com/articles/113/nsattributedstring-by-example
+		https://learngitbranching.js.org/
 
 ******
 ******
@@ -29,11 +30,67 @@ day46__F/7/19/_Day25: App Brewery (Dr. Angela)
 715am end time
 (90min) COMPLETE✅✅
 
-1230pm sess2 (60min net) 247 rev 
-
+1230pm sess2 	(60min net) 247 rev 
+630pm sess3	(90min net) LB
 ******
 ******
 
+Git && Version Control
+
+	git init (initialize directory)
+	ls -a	(see all hidden files)
+	git status
+		green? In staging area && being tracked
+		red? In working directory && UNTRACKED
+	git add fileName.txt (===> push to staging area && start tracking)
+	git commit -m "add message in present tense" (convention)
+		==> push to Local Repo
+		to create new save point; be explicit && specific
+	git checkout	to revert/rollback to previous commit 
+	git diff chapter13.txt (see differences among files)
+	git checkout chapter13.txt (roll back to last committed version of file)
+Think Visual:	Working Directory vs Staging Areas vs Local Repo
+
+
+Staging area == intermediate area; can pick && choose which files want to commit
+
+
+Local vs remote repo	(.git vs GitHub)
+Pushing an existing repo from command line:
+	git remote add origin <http...>
+		origin== name of remote repo (convention)
+		master== name of default branch
+	git push -u origin master (push from local ---> remote repo)
+Local repo === git push ===> Remote repo
+
+
+Git ignore
+	touch .gitignore
+	open .gitignore
+		+file names on single line;  # == comment
+	git rm --cached -r . (Remove everything) 
+	*.txt (ignore all files that end in .txt)
+===> Github ==> Swift ignore
+			https://github.com/github/gitignore/blob/master/Swift.gitignore
+
+git cloning
+	git clone <httpURL>
+
+
+BRANCHING && MERGING
+What branch am I on?
+	git branch (see all branches)
+	git checkout new-branch-created
+	git merge new-branch-created (ensure on MASTER)
+
+	git fetch
+
+	@VIM == :q! (Save && quit)
+
+FORKING && PULL REQUESTS
+Forking == making duplicate 
+
+---
 //MARK: -	for separating out code
 //TODO: 	also appears in index outline
 	P == properties
