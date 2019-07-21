@@ -31,12 +31,32 @@ day48__Sun/7/21/_Day27: App Brewery (Dr. Angela)
 645am end time
 (45min net) COMPLETE✅
 
-1110am sess2	(60min) 247 rev
-
+1110am 	sess2	(60min) 247 rev
+4pm	sess3	
 
 ******
 ******
 
+Can also CTR + DRAG from View Controller to view element
+
+Local vs instance var
+	local var ONLY exist for the duration of the method their in
+	instance var exist for as long as the OBJECT THAT OWNS them exists
+
+Local var easy to identify bc first time used in methods, preceded by let/var (creates new)
+	//6 local var restricted to showAlert method; as soon as method done, var cease to exist
+	&& each time method invoked, local var created anew w/old var discarded
+
+Instance var defined outside any method ~~top of file
+	declared in green
+	can use inside any method w/o need to declare again
+	
+Use instance var if want to keep certain value around from one action event to next
+Use local var for TEMPORARY storage
+
+--
+RayW
+--
 Expanding scope from local var in one method to more global access
 From let ===> var (immutable to mutable)
 
