@@ -28,11 +28,22 @@ Big difference between knowing the path, and walking the path.
 ******
 day48__Sun/7/21/_Day27: App Brewery (Dr. Angela)	
 6am start time
-am end time
-(min net) COMPLETE✅✅
+645am end time
+(45min net) COMPLETE✅
 
 ******
 ******
+
+Expanding scope from local var in one method to more global access
+From let ===> var (immutable to mutable)
+
+self.itemArray.append(textField.text!)  +user enter data to 
+self.tableView.reloadData()
+
+Breakpoint??
+
+
+
 
 ******
 ******
@@ -40,7 +51,6 @@ day47__Sat/7/20/_Day26: App Brewery (Dr. Angela)
 630am start time
 830am end time
 (75min net) COMPLETE✅✅
-
 ******
 ******
 
