@@ -23,6 +23,17 @@ Big difference between knowing the path, and walking the path.
 	-->	https://www.hackingwithswift.com/articles/113/nsattributedstring-by-example
 		https://learngitbranching.js.org/
 
+
+******
+******
+day48__Sun/7/21/_Day27: App Brewery (Dr. Angela)	
+6am start time
+am end time
+(min net) COMPLETE✅✅
+
+******
+******
+
 ******
 ******
 day47__Sat/7/20/_Day26: App Brewery (Dr. Angela)	
