@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
         
-        startNewRound()
+        startNewGame()
         
     }
 
@@ -82,13 +82,15 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Fantastic", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Fantastic", style: .default, handler: {
+            action in
+            self.startNewRound()
+        })
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
         
         
     }
@@ -101,7 +103,13 @@ class ViewController: UIViewController {
         currentValue = Int(roundedValue)
     }
     
-
+    @IBAction func startNewGame() {
+    score = 0
+    round = 0
+    startNewRound()
+    }
+    
+    
     func startNewRound() {
         round += 1
         targetValue = Int.random(in: 1...100)

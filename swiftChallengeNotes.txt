@@ -32,11 +32,58 @@ day48__Sun/7/21/_Day27: App Brewery (Dr. Angela)
 (45min net) COMPLETE✅
 
 1110am 	sess2	(60min) 247 rev
-4pm	sess3	
-
+4pm	sess3	(30min net) RayW
+630pm	sess4	(60min net) RayW
 ******
 ******
 
+Alerts work asynchronously (here, don't know in advance when alert will be done)
+	let action = UIAlertAction(title/style/handlier: nil)
+		XXX nil ====> {}
+	let action = UIAlertAction(// handler {
+	 action in
+	self.startNewRound()
+	})
+		handler== tells alert what should happen when button pressed
+		alert dismissed event
+		closure executed when alter action tapped
+
+Call back pattern
+
+closure ~~ in-line method
+	a method w/o a name
+	when want to have block of code executed at some point in the future upon a certain event occuring
+INSIDE closure == +self. ; outside == optional
+
+
+Each screen in app managed by View Controller
+
+The job of a View Controller:
+	to managed a SINGLE screen in your app
+
+Two parts of a View Controller:
+	main.storyboard (design)
+	ViewController.swift (code)
+
+Want new View Controller?
+	==> +Cocoa Touch class
+
+Can make text VIEW UNEDITABLE via checkbox
+
+Segue== transition from one screen to another
+	CTR + DRAG__element ---> View Controller (present modally)
+
+Dismiss method
+	dismiss(animated: true, completion: nil)
+
+Common beginner mistake:
+	created View Controller in storyboard 
+	created new swift file
+	but failed to connect 
+		@View Controller ===> Attributes Inspector (+'AboutViewController)
+---
+RayW
+--
 Can also CTR + DRAG from View Controller to view element
 
 Local vs instance var
