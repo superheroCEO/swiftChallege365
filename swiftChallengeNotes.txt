@@ -31,11 +31,69 @@ day49__M/7/22/_Day28: App Brewery (Dr. Angela)
 720am end time
 (90min net) COMPLETE✅
 
-12pm sess2	(90min) 247 rev
+12pm 	sess2	(90min) 247 rev
+230pm	sess3	(60min) RayW
 ******
 ******
 
+@1x old non-retina devices (outdated)
+@2x retina screens (100 x 100 pixels)
+@3x retina HD (iPhone Plus, 150 x 150 pixels)
 
+X, Y (0,0) && W, H (568, 320)
+
+@imageview 
+	===>EDITOR ===> arrange ===> send to back
+	|| hierarchy (top == front, bottom == back)
+@RGB sliders == 0,0,0 == black
+Shadow && shadow offset
+@button, type == custom (vs system)
+	background image vs image 
+@RGB (255, ", ") == white
+Button state config (highlight vs default)
+	===> +reverses on highlight
+
+	let thumbImageNormal = Image literal (+return)
+	slider.setThumbImage method
+	vs
+	let thumbImageHighlighted = "
+	slider.setThumbImage method
+		.normal vs .highlighted
+
+	let insets = UIEdgeInsets(...)
+	let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets:  )
+	slider.setMinimumTrackImage( )
+	vs	
+	slider.setMaximumTrackImage( )
+
+@Editor ==> Size to fit content (CMD + =)
+@Size Inspector ===> Content Insets (padding)
+
+WKWebView object
+
+	Use WebKit framework
+		WebKit includes WKWebView
+		can display local or remote content
+		to get content included in your app: use Bundle
+
+	use load to load a web page
+		load nees a URLRequest
+			URLRequest needs URL
+				URL needs a path
+					Bundle can give you a path to file included in app
+
+@Window ===> Developer Documentation: WKWebView
+
+	if let htmlPath = Bundle.main.path(forResource... ) {
+		let url = URL(fileURLWithPath: htmlPath)
+		let request = URLRequest(url)
+		webView.load(request)
+	}
+
+
+---
+RayW
+--
 App Lifecycle
 	App launched
 		App visible
