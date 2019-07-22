@@ -26,6 +26,68 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
+day49__M/7/22/_Day28: App Brewery (Dr. Angela)	
+540am start time
+720am end time
+(90min net) COMPLETE✅
+
+******
+******
+
+
+App Lifecycle
+	App launched
+		App visible
+			App recess into background
+				Resources reclaimed
+
+@WINDOW ===> Show Device Bezels
+@App Delegate file
+	DidFinishingLaunching 	(launches before ViewDidLoad)
+	WillResignActive	(prevent user from losing data)
+	DidEnterBackground	(when app disappears off screen)
+	applicationWillTerminate (killed by user or system)
+
+Individual apps live in sandbox
+Methods stored inside container for your app
+
+	let defaults = UserDefaults (interface into user defaults database where store key value pairs persistently across launches of app)
+	user defaults saved in plist file
+
+@DidFinishLaunching (always launched)
+	NSSearchPathForDirectories....
+
+uuid == unique device ID
+
+	let defaults = UserDefaults.standard
+
+	default.set(0.13, forKey: "Volume")
+	default.set(true, forKey: "MusicOn")
+	default.set("Taylor", forKey: "PlayerName)
+
+UserDefaults == singleton
+	spelling matters
+	only use for SMALL BITS of data; not a DB; stored in plist file
+
+Singleton == only one copy shared across all classes && objects
+	static let
+	
+	let defaults = UserDefaults.standard
+		inside class UserDefaults, singleton called standard, points toward same plist every time tap into user default
+		always retrieving/saving to same file
+
+The UserDefaults class provides a programmatic interface for interacting with the defaults system. The defaults system allows an app to customize its behavior to match a user’s preferences. For example, you can allow users to specify their preferred units of measurement or media playback speed. Apps store these preferences by assigning values to a set of parameters in a user’s defaults database. The parameters are referred to as defaults because they’re commonly used to determine an app’s default state at startup or the way it acts by default.
+
+dequeueReusableCell == use same cell
+Need to associate property not w/cell, but w/data
+
+
+        itemArray[indexPath.row].done = !itemArray[indexPath.row].done	
+		sets to OPPOSITE using not operator (!)
+
+
+******
+******
 day48__Sun/7/21/_Day27: App Brewery (Dr. Angela)	
 6am start time
 645am end time
