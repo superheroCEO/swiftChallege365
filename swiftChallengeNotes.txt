@@ -33,9 +33,16 @@ day49__M/7/22/_Day28: App Brewery (Dr. Angela)
 
 12pm 	sess2	(90min) 247 rev
 230pm	sess3	(60min) RayW
+720pm	sess4	
 ******
 ******
 
+???
+%.2f
+%d
+%d%%
+???
+--
 @1x old non-retina devices (outdated)
 @2x retina screens (100 x 100 pixels)
 @3x retina HD (iPhone Plus, 150 x 150 pixels)
