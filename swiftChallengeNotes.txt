@@ -26,6 +26,47 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
+day50__Tu/7/23/_Day29: App Brewery (Dr. Angela)	
+10am start time
+1110am end time
+(60min net) COMPLETE✅
+******
+******
+
+
+Ternary operator ==>
+	value = condition ? valueIfTrue : valueIfFalse
+
+	cell.accessoryType = item.done ? .checkmark : .none
+
+	instead of:
+
+        if item.done == true {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+
+        }
+
+User defaults intended for small pieces of data
+
+All apps in phone live in their own sandboxes
+	sheltered environment (~mini jails)	
+	apps can't effect operating system 
+
+
+Encoding data with NSCoder
+
+	let dataFilePath = FileManager.defaults.urls(for: .documentDirectory...
+
+Diff method for saving data && persisting it on a device
+	let encoder = PropertyListEncoder()
+	+conform to protocol Encodable
+plist can only accept limited number of data types (~standard) vs custom
+
+
+******
+******
 day49__M/7/22/_Day28: App Brewery (Dr. Angela)	
 540am start time
 720am end time
@@ -33,13 +74,13 @@ day49__M/7/22/_Day28: App Brewery (Dr. Angela)
 
 12pm 	sess2	(90min) 247 rev
 230pm	sess3	(60min) RayW
-720pm	sess4	
+720pm	sess4	(90min) 247 rev
 ******
 ******
 
-???
-%.2f
-%d
+?
+%.2f	float, 2 dec
+%d	int value
 %d%%
 ???
 --
