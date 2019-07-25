@@ -23,6 +23,158 @@ Big difference between knowing the path, and walking the path.
 	-->	https://www.hackingwithswift.com/articles/113/nsattributedstring-by-example
 		https://learngitbranching.js.org/
 
+	===>repeat Section 18: Core Datapw
+
+******
+******
+day52__Th/7/225/_Day31: App Brewery (Dr. Angela)	
+100am start time
+1130am end time (90min net) COMPLETE✅
+
+******
+******
+
+KEYWORD:  didSet { }
+
+	    let context = (UIApplication.shared.delegate as!AppDelegate).persistentContainer.viewContext
+
+Real.io
+	pod init
+	open podfile -a Xcode
+		pod 'RealmSwift'
+	pod install
+
+In terminal, can chain commands using semi-colon (;) in line
+lean toward committing everything pod related
+	
+	+import RealmSwift
+if can THROW error --> mark w/ try
+	+do catch block 
+Bc using realm, need to mark var as dynamic 	
+	== declaration modifier 
+	tells runtime to use dynamic dispatch instead of standard static dispatch 
+	allows property name to be monitored for change at runtime (while app running)
+
+	@objc dynamic var 
+		dynamic== 
+
+	do {
+	let realm = try Realm()
+	try realm.write {
+		real.add(data)
+	} catch {
+		print("error init. new realm \(error)")
+	
+
+@FINDER== CMD + SHIFT + G
+		===>file path searching
+
+******
+******
+day51__W/7/24/_Day30: App Brewery (Dr. Angela)	
+620am start time
+720am end time(60min net) COMPLETE✅
+1145am	sess2	40min net
+6pm	sess3	60min net
+******
+******
+
+
+	searchBarTextDidChange method
+	searchBar.resignFirstResponder()
+Main vs background thread
+	DispatchQueue	(manages execution of work items)
+	DispatchQueue.main.async { }
+
+	let context = (UIApplication.share.delegate as! AppDelegate).persistentContainer.viewContext
+
+//MARK: - TableViewDataSource Methods
+	numberOfRowsInSection
+		return categories.count
+	cellForRowAt indexPath
+		let cell
+		cell.textLabel?.text = 
+		return cell
+---
+Can't interact w/Persistent Container directly; must be done via Context (~staging area)
+CRUD == all things want to do w/DB; perform CRUD in Context
+	Create
+	Read
+	Update
+	Destroy 
+
+READING DATA FROM CORE DATA
+	.setValue method
+	itemArray[indexPath.row].setValue("Completed", forKey: "title")
+		always have to call 	context.save()
+
+REMOVING DATA FROM CORE DATA (DELETE)
+
+Context == temporary area (~staging)
+	itemArray.remove(at: IndexPath.row)	only removes item
+	context.delete(itemArray[IndexPath.row])	removes from DB
+		order of methods matters
+Whenever need to change date (Create, Update, Destroy), always need to call context.save()
+Read == just need context.fetch 
+
+IMPLEMENT UISearchBar && Querying w/CoreData
+
++UISearchBarDelegate
+searchBar.delegate = self
+	
+	extension: TodoListViewController = UISearchBarDelegate
+Try to split up/modularize fxn as much as possible
+To reach from context, have to request
+	let predicate = NSPredicate(format: "title CONTAINS %@)
+String comparisons be default case && diacritic sensitive 
+	let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+External vs internal parameters
+	internal == used inside method only; external used outside of method
+
+Can provide default value
+	func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest()) { ...}
+
+---
+==>File ===> New File ===> +Core Data: "Data Model"
+	+import CoreData
+	ensure spelling matches
+
+	Entity ~~ Class
+	Attributes ~~properties
+	each entity ~~ table
+
+Want ensure each item has a title (uncheck 'Optional')
+XXX Item.swift file
++Current Product Module
+Codegen == Manual/None, Class Definition, Category/Extension
+
+CMD + UpArrow
+
+	chflags nohidden ~/Library/
+
+	lazy var == when create var declared as lazy, only gets loaded up w/a value at time point when needed 
+	(when try to use ie 'lazy var persistentContainer: NSPersistentContainer = { } )
+	only occupying memory that's needed
+	NSPersistentContainer ~~SQLite DB
+	
+	let context = persistentContainer.viewContext
+	context ~~staging area; can change/update data until happy w/it
+	context == scratchpad
+
+How to Save Data w/Core Data (Create in CRUD)
+
+	let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext)
+	now have access to AppDelegate as an object
+
+/Core Data Fundamentals/
+
+OOP World	Core Data World		Database World
+Class 		Entity			Table
+Property	Attribute		Field (*Columns)
+
+When talking about NSManaged Object ~ row in table
+When put entities into Persistent Container ---> SQLite (stores all tables && relationships between tables)
+
 
 ******
 ******
@@ -31,11 +183,49 @@ day50__Tu/7/23/_Day29: App Brewery (Dr. Angela)
 1110am end time
 (60min net) COMPLETE✅
 1230pm	sess2	(90min) 247 rev
-
+720pm	sess3	(70min net) LB && rev notes
 ******
 ******
 
++protocol Codable  (include Encodable && Decodable protocols)
 
+When encode, converting one data type into another
+Music === Encoder ===> Vinyl disc
+      <== Decoder
+
+	let encoder = PropertyListEncoder()
+	vs
+	let decoder = PropertyListDecoder()
+
+METHOD		USE
+
+UserDefaults	Quickly persist small bits of data
+Codable		flash freeze custom objects
+Keychain	save small bits of data securely
+SQLite		persist large amounts of data && query it
+Core Data	Object-oriented database
+Realm		a faster && easier DB solution
+
+
+
+--
+Want app to adjust to additional space on bigger phones auto
+	===> auto layout
+
+Create constraints (rules) for elements to display across devices 
+
+==>select elements(all) ===>embed in view (put in container)
+			===>align 
+				Horizontally/Vertically in container
+			===>+new constraints
+				+Width/Height
+
++1 constraint==> you're responsible for Position && Size of layout going forward (vs auto provided by Swift)
+
++Update Frames == move elements where should be
+---
+RayW
+--
 Ternary operator ==>
 	value = condition ? valueIfTrue : valueIfFalse
 
@@ -82,7 +272,7 @@ day49__M/7/22/_Day28: App Brewery (Dr. Angela)
 
 ?
 %.2f	float, 2 dec
-%d	int value
+%d	int value placeholder
 %d%%
 ???
 --
@@ -127,7 +317,7 @@ WKWebView object
 		to get content included in your app: use Bundle
 
 	use load to load a web page
-		load nees a URLRequest
+		load needs a URLRequest
 			URLRequest needs URL
 				URL needs a path
 					Bundle can give you a path to file included in app
@@ -172,13 +362,13 @@ uuid == unique device ID
 
 	default.set(0.13, forKey: "Volume")
 	default.set(true, forKey: "MusicOn")
-	default.set("Taylor", forKey: "PlayerName)
+	default.set("Taylor", forKey: "PlayerName")
 
 UserDefaults == singleton
 	spelling matters
 	only use for SMALL BITS of data; not a DB; stored in plist file
 
-Singleton == only one copy shared across all classes && objects
+Singleton == ONLY one copy shared across all classes && objects
 	static let
 	
 	let defaults = UserDefaults.standard
@@ -209,7 +399,7 @@ day48__Sun/7/21/_Day27: App Brewery (Dr. Angela)
 ******
 
 Alerts work asynchronously (here, don't know in advance when alert will be done)
-	let action = UIAlertAction(title/style/handlier: nil)
+	let action = UIAlertAction(title/style/handler: nil)
 		XXX nil ====> {}
 	let action = UIAlertAction(// handler {
 	 action in
@@ -217,13 +407,13 @@ Alerts work asynchronously (here, don't know in advance when alert will be done)
 	})
 		handler== tells alert what should happen when button pressed
 		alert dismissed event
-		closure executed when alter action tapped
+		closure executed when alert action tapped
 
 Call back pattern
 
 closure ~~ in-line method
 	a method w/o a name
-	when want to have block of code executed at some point in the future upon a certain event occuring
+	when want to have block of code executed at some point in the future upon a certain event occurring
 INSIDE closure == +self. ; outside == optional
 
 
@@ -424,6 +614,7 @@ messageTableView.separatorStyle = .none
 
 
 ******
+ Review left here
 ******
 day45__Th/7/18/_Day24: App Brewery (Dr. Angela)	
 530am start time
