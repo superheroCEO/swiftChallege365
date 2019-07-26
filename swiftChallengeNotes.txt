@@ -30,10 +30,45 @@ Big difference between knowing the path, and walking the path.
 day53__F/7/26/_Day32: App Brewery (Dr. Angela)	
 535am start time
 705am end (90min net)
+
+930am	sess2 (20min net)
+1230pm	sess3 (90min net)
 ******
 ******
 
+CMD + [
 
+@viewDidLoad:
+	tableView.seperatorStyle = .none
+
+	todoItems?.count == 'get count if not nil'
+
+NSAttributedStringKey === NSAttributedString.key
+
+==
+Coding==giving instructions to computer on how to handle data
+
+	We use var to keep track of data w/in app
+	use print to output some data to console area
+Don't have to redeclare var once declared
+
+When you reassign data to var, it must be SAME TYPE as initial data type
+	let == constant
+Once assign data to constant, can't reassign data
+Constants useful to keep track of data you need, but you don't expect to change
+var && constant names should be descriptive, but not overly long (1-4 words ideal)
+	best practice == camelCasing
+
+Keywords:	var && let
+	to declare new var && constants
+Use equal sign ( = ) to assign data to var && constant
+Use camelCase as best practice when naming var/constant
+constants== can't reassign data to them after initial assignment 
+
+
+---
+Code w/Chris Lesson1
+---
 NS == CoreDate framework
 	newItem.dateCreated = Date()
 
