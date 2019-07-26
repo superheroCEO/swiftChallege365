@@ -29,10 +29,23 @@ Big difference between knowing the path, and walking the path.
 ******
 day53__F/7/26/_Day32: App Brewery (Dr. Angela)	
 535am start time
-
-
+705am end (90min net)
 ******
 ******
+
+
+NS == CoreDate framework
+	newItem.dateCreated = Date()
+
+CMD + SHIFT + G (search file path)
+
+Buildtime vs Runtime error
+	%@ ("this argument")
+
+Any UI/front end related? 
+	search cocoapods; window shopping
+	
+	as!	downcast it as
 
 
 ******
