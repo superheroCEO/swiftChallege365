@@ -23,17 +23,26 @@ Big difference between knowing the path, and walking the path.
 	-->	https://www.hackingwithswift.com/articles/113/nsattributedstring-by-example
 		https://learngitbranching.js.org/
 
-	===>repeat Section 18: Core Datapw
+	===>repeat Section 18: Core Data
 
 ******
 ******
-day52__Th/7/225/_Day31: App Brewery (Dr. Angela)	
+day52__Th/7/25/_Day31: App Brewery (Dr. Angela)	
 100am start time
-1130am end time (90min net) COMPLETE✅
+1130am end time (90min net)
+640pm	sess2	(90min net)
 
 ******
 ******
 
+
+	let array: Array<Int> = [1,2,3] === let array:[Int] = [1,2,3]
+	let array= Array<Int>()		an empty array of int
+
+?? Nil Coalescing Operator
+CMD + F ==> replace
+CMD + CLICK ==>rename
+--
 KEYWORD:  didSet { }
 
 	    let context = (UIApplication.shared.delegate as!AppDelegate).persistentContainer.viewContext
