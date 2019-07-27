@@ -29,12 +29,16 @@ Big difference between knowing the path, and walking the path.
 ******
 day54__Sat/7/27/_Day33: App Brewery (Dr. Angela)	
 605am start time
-705am end (90min net)
-
-
+720am end (80min net)
 ******
 ******
 
+
+	guard let
+		guard against it, but expect value; if not fatalError()
+crashes not a bad thing
+viewWillAppear gets called later than viewDidLoad
+viewWillDisappear
 
 ******
 ******
