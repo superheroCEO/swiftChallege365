@@ -27,6 +27,67 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
+day55__Sun/7/28/_Day34: App Brewery (Dr. Angela)	
+1230pm 	start
+2pm	end (90min net)
+
+******
+******
+
+	SKPaymentQueue.default() object
+	SKPaymentQueue.default().didFinishTransaction(transaction) == terminate the 
+transaction
+
+	navigationItem.setRightBarButton(nil, true) == remove button
+
+Stored properties (container that can store properties)
+Say, car object:
+	Class
+	properties:
+		let color = red
+		var type = "coupe"
+	methods:
+		func drive() {}	
+
+Vs computed properties: values that can be calculated on the go by using code we write
+
+@playground, need automatically enable code running?
+	long click play button near bottom == Automatically Run
+
+//Getters//
+Execute code { } to get value of computed property
+For computer properties, must be a VAR && must set data type explicitly
+
+	let pizzaInInches = 12
+	var numberOfSlices: Int {
+	get {
+		return pizzaInInches - 4
+	  }
+	}
+
+Note use of get { }
+Have method w/no input && output && just execute code? Consider using getter
+	get only == read only
+
+//Setters//
+Special var newValue
+Setter allows us to tap into property at the exact moment when property set to new value
+	set {
+		//execute code w/newValue
+	}
+
+//Observed Properties//
+	willSet { }
+		monitor right before value changes
+		have newValue *KEYWORD*
+	didSet { }
+		monitor right after value changes
+		have oldValue *KEYWORD*
+Computed properties && observed properties must be VAR
+
+
+******
+******
 day54__Sat/7/27/_Day33: App Brewery (Dr. Angela)	
 605am start time
 720am end (80min net)
