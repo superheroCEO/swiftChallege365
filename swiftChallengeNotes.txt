@@ -30,8 +30,74 @@ Big difference between knowing the path, and walking the path.
 day54__Sat/7/27/_Day33: App Brewery (Dr. Angela)	
 605am start time
 720am end (80min net)
+1150	sess2	(30min)
+610pm	sess3 	(90min net)
 ******
 ******
+For TableViewController	numberOfRowsInSection:
+	return varSet.count
+	1) make cell dequeueResuableCell w/Identifier
+	2) set cell.textLabel?.text w/ varSet[indexPath.row]
+	3) set cell.textLabel?.numberOfLines = 0 (will take as many lines as needed)
+
+	cell.accessoryType = .disclosureIndictor (" > " at far right to denote something happens at cell click)
+	didSelectRowAt indexPath == a main Table View delegate method
+note use of rq keyword OVERRIDE == override inherited fxn of subclass && implement our fxn { }
+	tableView.deselectPath at indexPath, true (click ==>grey to white)
+
+/implementing in-app w/StoreKit/
+
+	let productID = "com.my247c.InsoQuote.Prem"
+	+import StoreKit
+	if SKPaymentQueue.canMakePayments() { }
+		let paymentRequest = SKMutablePayment() (new in-app payment request)
+		SKPaymentQueue.default().add(PaymentRequest)
+	+SKPaymentTransactionObserver delegate 
+		have to declare class as the delegate
+		class QuoteTableViewController "I'll be the delegate to receive messages from the observer" == 
+		@viewDidLoad == SKPaymentQueue.default().add(self)
+
+Non-consumable in-app purchases
+Need to end transaction so not still holding onto same transaction 
+	SKPaymentQueue.default().finishTransaction(transaction)	
+
+	if let error = transaction.error {
+		let errorDescription = error.localizedDescription 
+	}
+	func showPremiumQuotes() {
+	quotesToShow.append(contentsOf: premiumQuotes)
+	tableView
+	}
+
+SKPaymentTransactionObserver && SKPaymentQueue.default().add(self) 
+==
+Data Types
+
+String		piece of text
+Int		whole numbers + or -
+Float		decimal numbers
+Double		Large decimal numbers
+Bool		true or false
+
+Can explicitly declare data type
+	var firstName: String = "Taylor"	
+	let tayFaveNumber: Int = 13
+
+Greatest enemy is us in coding == our logic; our coding
+Double == default data type for swift (instead of float)
+
+	var d = 13.13
+	pow (2,3)
+	sqrt(16)
+	ceil(d)		rounds up
+	floor(d)	rounds down
+
+	a = a + 1 === a += 1
+	a = a - 1 === a -= 1
+
+--
+Code w/chris, Lesson2
+--
 
 
 	guard let
