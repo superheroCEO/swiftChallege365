@@ -31,12 +31,62 @@ day57__TU/7/30/_Day36: App Brewery (Dr. Angela)
 820am 	start 
 922am	end	(60min net)
 
-1230pm	sess2
+1230pm	sess2	(90min net)
 		
 ******
 ******
 
 
+CMD + OPTION + <- | -> (to collapse method; just below func declaration)
+declaring global var --> consider PRIVATE declaration == scope limited to class { }
+	get {} requires return 
+
+If want to SUBCLASS something == cocoa touch class
+Vs Swift file == own custom classes
+MVC && "New Group from Selection" (organization)
+	import foundation vs import UIKit
+		UIKit == foundation + UI capabilities 
+
+	self == refers to current class in
+	"self.number = number" --> find 'number' in current class, set to LOCAL var 'number'
+
+//Struct vs Classes//
+
+	struct MyStruct {
+		var aProperty: String
+		func aMethod() {
+			//do something here
+		}
+	}
+
+Which is better?
+Just different TOOLS
+
+Cannot inherit or subclass from a struct ===> reserved for Classes
+Live in different places in memory
+Random Access Memory (RAM) == fq needs to be accessed vs permanent storage (hard disk)
+	different ways of organizing RAM
+		struct == stack
+		class == heap 
+	structs live on the stack
+		follow FILO system (First In, Last Out)
+		first piece of data went into stack will be last one that pops off the stack
+		most recently saved pieces of data == on hand && quickly accessed
+	classes live in the heap
+		class also has a REFERENCE in the stack
+		Reference will point towards allocated data in heap
+
+Structs are value types
+	store actual data value (ie var age = 29)
+Classes are Reference types
+	store a reference to a block of memory 
+	reference just an instruction on how might locate reference in heap 
+	( "go to the heap && find the blue folder" )
+	reference == how to locate a block of memory inside the heap
+Copy actual value vs copy reference 
+
+
+--
 //Swift Access Levels//
 Tier1	private		(prop/method only accessible w/in { } scope)
 Tier2	fileprivate	(prop/method only accessible w/I file declared)
