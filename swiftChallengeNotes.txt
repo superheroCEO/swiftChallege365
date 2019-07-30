@@ -27,11 +27,51 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
-day56__M/7/229/_Day35: App Brewery (Dr. Angela)	
-445pm	start	
+day57__TU/7/30/_Day36: App Brewery (Dr. Angela)	
+820am 	start 
+922am	end	(60min net)
+		
+******
+******
+
+
+//Swift Access Levels//
+Tier1	private		(prop/method only accessible w/in { } scope)
+Tier2	fileprivate	(prop/method only accessible w/I file declared)
+Tier3	internal 	(default access level)
+			accessible anywhere w/I app module
+Tier4	public		access granted to other modules
+			think cocoa pods
+Tier5	open		think public+; allows classes/modules to be subclassed & overridden 
+
+Standard app dev == tier1-3
+@file, blue icon == own module; ie Clima project vs pods project 
+
+**by default, give every var/let/func PRIVATE declaration 
+	private to prevent accidental modification by other classes
+Level-up scope only when necessary 
+
+Local var only accessible w/I the scope they were declared in
+Global var accessible w/I entire class
+
+Don't have to turn local var into private ---> scope already limited
+Cast as double --> Double(displayLabel.text!)
+When cast string into Double, always an optional Double
+	what would Double(A) be?
+Number to string casting always possible --> String(13) === "13" 
+	text!	certain text always there 
+?? Nil coalescing operator == to provide a default when the optional value contains nil
+	guard && fatalError() | fatalError(message: String)
 
 ******
 ******
+day56__M/7/29/_Day35: App Brewery (Dr. Angela)	
+445pm	start (70min net)	
+******
+******
+
+Setter set && newValue
+
 
 
 ******
