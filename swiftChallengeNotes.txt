@@ -30,10 +30,23 @@ Big difference between knowing the path, and walking the path.
 day58__W/7/31/_Day37: App Brewery	
 910am 	start 
 1020am	end	(60min net)
-	
+
+11am	sess2	(90min net)	
 ******
 ******
 
+1) conform delegates
+2) create UIImagePickerController() object
+3) set imagePicker properties (.delegate/.sourceType/.allowsEditing)
+4) present View Controller
+
+be specific when declaring var/let
+Downcast as? UIImage
+@pList == +Privacy== Camera access/photo library access
+
+Error SIGABRT == "signal abort" == "look, your app has crashed, that's all we know"
+Apps aren't magic && bugs never happen out of the blue
+--
 //CoreML//
 Supervised learning: providing labeled data
 
