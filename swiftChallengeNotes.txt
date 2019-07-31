@@ -27,16 +27,50 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
-day58__W/7/31/_Day37: App Brewery (Dr. Angela)	
+day58__W/7/31/_Day37: App Brewery	
 910am 	start 
-am	end	(net)
+1020am	end	(60min net)
 	
 ******
 ******
 
+//CoreML//
+Supervised learning: providing labeled data
+
+We learn pattern recognition && how to classify
+Model == does learning
+Training Data == data fed
+Testing Data (never seen) ===Model===> Output 
+Generic classifier
+Discrete vs continuous data
+	school grade vs height (A- vs 5'10.5)
+Regression
+
+
+Unsupervised learning
+Feed tons of data, want model to figure out some sense in data
+learn to find structure in unstructured data
+Clustering
+	have discrete data that can be categorized 
+
+//Reinforcement learning 
+Chess && win probability (positive vs negative reinforcement)
+
+CoreML allows
+	1) load a Pre-Trained Model	(plug && play)
+	2) allow Model to make predictions
+	3) able to do Classification or Regression
+
+Cannot
+	use app data/user generated data to train Model (no training allowed)
+	a static model 
+	not encrypted 
+
+
+
 ******
 ******
-day57__TU/7/30/_Day36: App Brewery (Dr. Angela)	
+day57__TU/7/30/_Day36: App Brewery 
 820am 	start 
 922am	end	(60min net)
 
