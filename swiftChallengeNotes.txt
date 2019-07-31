@@ -32,17 +32,51 @@ day57__TU/7/30/_Day36: App Brewery (Dr. Angela)
 922am	end	(60min net)
 
 1230pm	sess2	(90min net)
+420pm	sess3	(60min net)
+7pm	sess4	(45min net)
 		
 ******
 ******
 
+	guard let == guarding against something terrible
+--
+//Swift Tuples//
 
+	let touple1: (name: String, age: Int)
+	touple1 = (name: "Taylor", age: "29")
+	print("\(touple1.name) is \(touple1.age) years old today.")
+--
+Swift always need initial values, even if don't have any 
+	&& have to be nil
+	===> initializers (init)
+Created class vs initialized object from class
+You get free initializers w/Struct (initializer created behind the scene)
+Class && new reference to same object; actual object not copied at all 
+Guard against Future You messing up your code
+Whenever try to change Struct, have to create new copy
+KEYWORD:	mutating
+
+Structs cannot subclass
+Struct== a value type == copied whenever used
+Structs
+	faster, simpler, deep copies, true immutability, no memory leaks && thread safety
+Classes
+	has inheritance
+	works w/Obj C code
+
+Use Struct by default && only change to Class if rq inheritance / interaction w/Obj C code
+
+
+Add KEYWORD private to all global var by default
+Setting external vs internal param name (int== method, ext == outside of method)
+	mutating func == this method is capable of changing the properties inside the declared Struct
+--
 CMD + OPTION + <- | -> (to collapse method; just below func declaration)
 declaring global var --> consider PRIVATE declaration == scope limited to class { }
 	get {} requires return 
 
 If want to SUBCLASS something == cocoa touch class
-Vs Swift file == own custom classes
+vs Swift file == own custom classes
 MVC && "New Group from Selection" (organization)
 	import foundation vs import UIKit
 		UIKit == foundation + UI capabilities 
@@ -88,8 +122,8 @@ Copy actual value vs copy reference
 
 --
 //Swift Access Levels//
-Tier1	private		(prop/method only accessible w/in { } scope)
-Tier2	fileprivate	(prop/method only accessible w/I file declared)
+Tier1	private		(property/method only accessible w/in { } scope)
+Tier2	fileprivate	(property/method only accessible w/I file declared)
 Tier3	internal 	(default access level)
 			accessible anywhere w/I app module
 Tier4	public		access granted to other modules
@@ -135,7 +169,7 @@ day55__Sun/7/28/_Day34: App Brewery (Dr. Angela)
 ******
 ******
 
-	SKPaymentQueue.default() object
+	SKPaymentQueue.default() 	object created
 	SKPaymentQueue.default().didFinishTransaction(transaction) == terminate the 
 transaction
 
@@ -171,7 +205,7 @@ Have method w/no input && output && just execute code? Consider using getter
 	get only == read only
 
 //Setters//
-Special var newValue
+SPECIAL var newValue
 Setter allows us to tap into property at the exact moment when property set to new value
 	set {
 		//execute code w/newValue
