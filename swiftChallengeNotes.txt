@@ -32,9 +32,27 @@ Big difference between knowing the path, and walking the path.
 ******
 day59__Th/8/1/_Day38: App Brewery	
 130pm 	start 
-
+330pm	end 	(90min net)
 ******
+******
+	source python27/bin/activate @Env
+	python --version
+	deactivate @Env
+	
+	pip install -U coremltools
 
+	python convert-script.py
+
++UIImagePickerControllerDelegate, UINavigationControllerDelegate
+	let imagePicker = UIImagePickerController() object created
+		@viewDidLoad == pickerView.delegate = self
+
++method didFinishPickingMedia
+
+	pod init
+	open pod file -a Xcode
+		pod 'XZY'
+	pod install
 ******
 ******
 day58__W/7/31/_Day37: App Brewery	
