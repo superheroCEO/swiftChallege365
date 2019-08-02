@@ -30,6 +30,17 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
+day60__F/8/2/_Day39: App Brewery	
+9am 	start 
+pm	end 	
+******
+******
+
+
+
+
+******
+******
 day59__Th/8/1/_Day38: App Brewery	
 130pm 	start 
 330pm	end 	(90min net)
@@ -1149,7 +1160,8 @@ git cloning
 BRANCHING && MERGING
 What branch am I on?
 	git branch (see all branches)
-	git checkout new-branch-created
+	git branch <feature_branch>
+	git checkout <new-branch-created>
 	git merge new-branch-created (ensure on MASTER)
 
 	git fetch
