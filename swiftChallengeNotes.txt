@@ -25,6 +25,8 @@ Big difference between knowing the path, and walking the path.
 
 	-->	https://www.hackingwithswift.com/articles/113/nsattributedstring-by-example
 		https://learngitbranching.js.org/
+		Freepik.com	(graphical resources)
+		makeappicon.com
 
 	===>repeat Section 18: Core Data
 
@@ -32,12 +34,25 @@ Big difference between knowing the path, and walking the path.
 ******
 day60__F/8/2/_Day39: App Brewery	
 9am 	start 
-pm	end 	
+1020am	end	(80min net) 	
 ******
 ******
 
 
+//alamofire && GET request//
++base url == global == accessible all methods
++	func request(flowerName: String) { }
++	Alamofire.request(wikiURL/ .get /.responseJSON {
+	if response.result.isSuccess { }
 
+Know réponse successful --> reasonably safe to unwrap w/ (!)
+@lines: 1 --> 0 (removes text truncation)
+@autoshrink == 'minimum font size'
+
+	pod 'SDWebImage'
+	@terminal	pod install
+
+Freepik.com	(graphical resources)
 
 ******
 ******
