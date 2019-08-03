@@ -34,10 +34,13 @@ Big difference between knowing the path, and walking the path.
 ******
 day61__Sat/8/3/_Day40: App Brewery	
 1230pm 	start 
-m	end	 	
+145pm	end	(60min net)	 	
 ******
 ******
 
+	import CreateMLUI
+	let builder = MLImageClassifierBuilder()
+	builder.showInLiveView()
 
 
 ******
