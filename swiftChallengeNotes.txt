@@ -32,6 +32,21 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
+day63__M/8/5/_Day42: App Brewery	
+1130am 	start
+1210pm	end	(40min net) 
+
+3pm	sess3		 	
+******
+******
+
+On ML continued 
+Refactor code; break up fun
+	remove hardcoding 
+	create new fun && remember to call fxn 
+
+******
+******
 day62__Sun/8/4/_Day41: App Brewery	
 1230pm 	start 
 210pm	end	(90min net)	 	
