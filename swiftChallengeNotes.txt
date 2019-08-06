@@ -36,14 +36,38 @@ day63__M/8/5/_Day42: App Brewery
 1130am 	start
 1210pm	end	(40min net) 
 
-3pm	sess3		 	
+415pm	sess2	(60min net) 	
 ******
 ******
 
+ARKit intro
+Diffuse shading property: amount & color of light reflected
+	ARWorldTrackingConfiguration()	(full immersive exp)
+	vs
+	ARSessionConfiguration		(object floating in air)
+
+
+Scene nodes == points in 3D space
+Z axis == towards vs away
++z vs -z ~= +0.13 vs -0.13
+
+--
 On ML continued 
 Refactor code; break up fun
 	remove hardcoding 
 	create new fun && remember to call fxn 
+chamferRadius == cornering
+
+Must run on device*
+
+*have to navigate into asset --> "art.scnassets/taylor.jpg"
+
+Bounding box == cube that contains object
+(Width/height/depth --> in meters)
+Front camera == what see when open app
+	diceNode?.position == optional chaining ==> if dice node exists, set position
+
+
 
 ******
 ******
