@@ -34,10 +34,35 @@ Big difference between knowing the path, and walking the path.
 ******
 day64__Tu/8/6/_Day43: App Brewery	
 720am 	start
-	end	(40min net) 
+825am	end	(60min net) 
 
+125pm	sess2	(30min net)
+720pm	sess3	(25min net)
+******
 ******
 
+OPTION + CTR + I --> indentation 
+--
+//place dice in 3D using touch
+CMD + [ 
+
+//Detect Horizontal planes in real world
+Add planeDetection property to configuration
+	func renderer didAdd
+SCNPlane = create plane in scene view
+Create plane node
+Flat, horizontal plane --> y = 0
+SCN Planes created as VERTICAL planes
+1 pie rad = 180deg && pi/2 = 90
+Angle = amount of rotation (measured in rad) COUNTERCLOCKWISE around rotation axis
+For human eyes, need to give material 
+	let gridMaterial = SCNMaterial()
+	node.addChildNode(planeNode)
+
+//how detect touch in real world 3D objects
+	touchesBegan delegat method
+	
+ 
 ******
 ******
 day63__M/8/5/_Day42: App Brewery	
