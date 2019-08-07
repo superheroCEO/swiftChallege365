@@ -32,6 +32,16 @@ Big difference between knowing the path, and walking the path.
 
 ******
 ******
+day65__W/8/7/_Day44: App Brewery	
+9am 	start
+950am	end	(45min net) 
+
+
+******
+******
+
+******
+******
 day64__Tu/8/6/_Day43: App Brewery	
 720am 	start
 825am	end	(60min net) 
